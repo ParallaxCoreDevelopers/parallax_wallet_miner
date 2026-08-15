@@ -6,7 +6,6 @@ Official open-source repository for the Parallax network node miner and desktop 
 Parallax is a community-first digital asset designed for accessible mobile and desktop mining based on a lightweight Scrypt algorithm. 
 
 * **Ticker:** PLX
-* **Website:** [parallaxcoin.xyz](https://parallaxcoin.xyz)
 * **Phase:** Testnet Genesis Phase
 
 ## 🚀 How to Build and Run
