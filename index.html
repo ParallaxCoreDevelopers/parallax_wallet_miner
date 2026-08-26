@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Network | Layer 1 Proof-of-Work</title>
+    <style>
+        :root { --bg: #0d1117; --text: #c9d1d9; --accent: #58a6ff; --card: #161b22; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 0; }
+        header { text-align: center; padding: 5rem 1rem 3rem; background: radial-gradient(circle at top, #1f2937, var(--bg)); }
+        h1 { color: #fff; font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .tagline { font-size: 1.2rem; color: #8b949e; max-width: 600px; margin: 0 auto 2rem; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+        .card { background: var(--card); border: 1px solid #30363d; padding: 1.5rem; border-radius: 6px; }
+        .card h3 { margin-top: 0; color: #fff; }
+        .btn-container { text-align: center; margin-bottom: 3rem; }
+        .btn { display: inline-block; background: var(--accent); color: #fff; padding: 0.8rem 2rem; font-weight: bold; text-decoration: none; border-radius: 6px; margin: 0.5rem; transition: background 0.2s; }
+        .btn:hover { background: #1f6feb; }
+        .btn-secondary { background: #21262d; border: 1px solid #30363d; color: var(--accent); }
+        .btn-secondary:hover { background: #30363d; }
+        .code-box { background: #000; border: 1px solid #30363d; padding: 1rem; border-radius: 6px; font-family: monospace; color: #39ff14; overflow-x: auto; margin-bottom: 3rem; }
+        footer { text-align: center; padding: 2rem; color: #8b949e; font-size: 0.9rem; border-top: 1px solid #30363d; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Parallax Network</h1>
+        <p class="tagline">An upgraded Layer 1 Proof-of-Work blockchain built on optimized Bitcoin & Litecoin technology. Engineered for decentralized solo mining, Scrypt execution, and asset-oriented ledger logic.</p>
+        <div class="btn-container">
+            <a href="https://github.com" class="btn">Download Node v0.1.4 Assets</a>
+            <a href="https://github.com" class="btn btn-secondary">Read Project Wiki</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h3>🚀 Upgraded Core Engine</h3>
+                <p>Built using the rugged security foundations of Bitcoin and Litecoin, adapted to remove legacy network bottlenecks and optimise block execution stability.</p>
+            </div>
+            <div class="card">
+                <h3>⛏️ Native Solo Mining</h3>
+                <p>Engineered from the codebase up to support completely decentralised solo nodes, preventing hash rate centralisation into massive corporate mining pools.</p>
+            </div>
+            <div class="card">
+                <h3>🔒 Public Testnet Live</h3>
+                <p>Version 0.1.4 is open for public testing. Run a local validation daemon or compile directly from source to start securing the test network layers.</p>
+            </div>
+        </div>
+
+        <h2 style="color: #fff;">Network Infrastructure Configuration</h2>
+        <p>To connect your Parallax full node directly to the public testnet mesh, utilise our verified seed and node infrastructure addresses below:</p>
+        <div class="code-box">
+            addnode=node1.parallaxcoin.xyz<br>
+            addnode=node2.parallaxcoin.xyz<br>
+            addnode=seed1.parallaxcoin.xyz<br>
+            addnode=seed2.parallaxcoin.xyz
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Parallax Network. Completely Open Source under the MIT License.</p>
+    </footer>
+
+</body>
+</html>
 
