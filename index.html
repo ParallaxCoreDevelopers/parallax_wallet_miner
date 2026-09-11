@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- 🔍 CRITICAL GOOGLE SEO META TAGS -->
+    <!-- 🔍 GOOGLE SEARCH ENGINE OPTIMIZATION (SEO) & TAGS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- This is the title Google displays in search results (optimised under 60 chars) -->
     <title>Parallax (PLX) Cryptocurrency | Layer 1 PoW Node Wallet & Miner</title>
-    
-    <!-- This is the snippet description Google shows under your link (optimised under 160 chars) -->
     <meta name="description" content="Official home of Parallax (PLX). An independent, open-source Layer 1 Proof-of-Work blockchain featuring a native GUI solo mining wallet node. 0% Premine fair launch.">
-    
-    <!-- Explicit search crawler indexing keywords -->
     <meta name="keywords" content="Parallax, PLX, Parallax plx, cryptocurrency, crypto, new crypto mining, solo mining, CPU mining, PoW blockchain, Layer 1 crypto, open source miner, Bitcoin fork, Litecoin fork, Scrypt mining, crypto wallet miner, fair launch crypto, no premine coin, download crypto wallet, autonomous node miner">
-    
-    <!-- Direct instructions to Google's indexing robots to crawl and rank this site -->
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://parallaxcoin.xyz">
+
+    <!-- 🟢 LOGO FAVICON ROUTE -->
     <link rel="icon" type="image/png" href="logo.png">
 
-    <!-- 🛠️ GOOGLE SEARCH CONSOLE VERIFICATION LINK CARD -->
-    <!-- REPLACE THE VALUE BELOW ONCE YOU GET YOUR CODE FROM GOOGLE SEARCH CONSOLE -->
-    <meta name="google-site-verification" content="bjgK7MNNCZPyPKVjUgi7F0-vRFXSeaiwItllybK0-nA" />
-
     <style>
-        /* Signature custom rich dark green design theme layout */
+        /* Custom vibrant dark green aesthetic theme layout */
         :root {
-            --bg-color: #041a12; /* Deep, rich dark green background */
-            --card-bg: #09261b; /* Lighter green for feature cards */
-            --accent-green: #2ea44f; /* Vibrant green button color */
+            --bg-color: #041a12;
+            --card-bg: #09261b;
+            --accent-green: #2ea44f;
             --accent-hover: #2c974b;
-            --text-main: #d1dbd6; /* Soft theme off-white text */
+            --text-main: #d1dbd6;
             --text-white: #ffffff;
             --border-color: #123d2d;
         }
@@ -40,10 +30,37 @@
             padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
-            background: linear-gradient(135deg, #03140e 0%, #062419 100%); /* Smooth color depth gradient */
+            background: linear-gradient(135deg, #03140e 0%, #062419 100%);
             color: var(--text-main);
             line-height: 1.5;
             min-height: 100vh;
+            position: relative;
+        }
+
+        /* 🏷️ LOGO CORNER CONTAINER */
+        .logo-container {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .logo-container img {
+            width: 65px;
+            height: auto;
+            display: block;
+        }
+
+        .logo-text {
+            color: var(--text-white);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         .container {
@@ -54,7 +71,7 @@
 
         header {
             text-align: center;
-            padding: 4rem 1rem 3rem 1rem;
+            padding: 6rem 1rem 3rem 1rem;
             border-bottom: 1px solid var(--border-color);
         }
 
@@ -85,7 +102,7 @@
             font-weight: 500;
             text-decoration: none;
             border-radius: 6px;
-            transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+            transition: background-color 0.2s ease;
             font-size: 0.9rem;
         }
 
@@ -93,7 +110,6 @@
             background-color: var(--accent-green);
             color: #ffffff;
             border: 1px solid rgba(240, 246, 252, 0.1);
-            box-shadow: 0 1px 0 rgba(27, 31, 36, 0.1);
         }
 
         .btn-green:hover {
@@ -108,7 +124,6 @@
 
         .btn-outline:hover {
             background-color: #154a36;
-            border-color: #8b949e;
         }
 
         .features-section {
@@ -138,11 +153,10 @@
 
         .card p {
             color: #a3b8aa;
-            margin-bottom: 0;
             font-size: 0.9rem;
         }
 
-        /* Repository Documentation Box Grid */
+        /* 📦 DOCUMENT NAVIGATION BOX GRID */
         .doc-section {
             padding: 2rem 0;
             border-top: 1px solid var(--border-color);
@@ -188,33 +202,83 @@
             font-size: 0.8rem;
             border-top: 1px solid var(--border-color);
         }
+
+        @media (max-width: 768px) {
+            .logo-container {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin: 1.5rem auto 0 auto;
+            }
+            header {
+                padding: 2rem 1rem;
+            }
+        }
     </style>
 </head>
 <body>
 
+    <!-- BRAND LOGO ELEMENT -->
+    <div class="logo-container">
+        <img src="logo.png" alt="Parallax Logo">
+        <div class="logo-text">Parallax PLX</div>
+    </div>
+
     <div class="container">
+        <!-- HEADER WITH WORKING ACTION LINKS -->
         <header>
             <h1>Parallax (PLX) Cryptocurrency</h1>
             <p>Official open-source repository for the Parallax network node miner and desktop wallet ecosystem.</p>
- <!-- 🔗 LINK 1: README -->
-                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/blob/main/README.md" target="_blank">
+            
+            <div class="cta-buttons">
+                <!-- 🔗 TARGET 1: FIXED MAINNET WALLET EXEC FILE LINK -->
+                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/releases/download/v0.1.4/Parallax_Wallet_Miner_Mainnet.exe" class="btn btn-green">
+                    Download Wallet & Miner (Mainnet)
+                </a>
+                <!-- 🔗 TARGET 2: FIXED PUBLIC PROJECT WIKI LINK -->
+                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/wiki" class="btn btn-outline">
+                    View Project Documentation Wiki
+                </a>
+            </div>
+        </header>
+
+        <!-- ARCHITECTURAL FEATURES MATRIX -->
+        <section class="features-section">
+            <div class="grid">
+                <div class="card">
+                    <h3>🚀 Upgraded Core Architecture</h3>
+                    <p>Leverages the historical cryptography and security profiles of Bitcoin and Litecoin, refined to clean up legacy bottlenecks and support custom block target parameters.</p>
+                </div>
+                <div class="card">
+                    <h3>⚒️ Integrated Solo Mining UI</h3>
+                    <p>No complicated terminal syntax or pools required. Features a native "Start/Stop Mining" graphical toggle button built directly into the core desktop application window.</p>
+                </div>
+                <div class="card">
+                    <h3>💎 Pure Mainnet Launch</h3>
+                    <p>Officially live on Mainnet as of 09/09/2026. A transparent, verified zero-balance deployment executing directly from Genesis Block 0 with a strict 0% pre-mine allocation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACCESSIBLE BOX NAVIGATION FOR REPOSITORY SPECIFICATIONS -->
+        <section class="doc-section">
+            <h2>Core Repository Specifications</h2>
+            <div class="doc-grid">
+                <a href="README.md" class="doc-link-card" target="_blank">
                     📄 View Readme Guide
                 </a>
-                
-                <!-- 🔗 LINK 2: SECURITY POLICY -->
-                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/blob/main/SECURITY.md" class="doc-link-card" target="_blank">
+                <a href="SECURITY.md" class="doc-link-card" target="_blank">
                     🛡️ Security Policy
                 </a>
-                
-                <!-- 🔗 LINK 3: MIT LICENSE -->
-                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/blob/main/LICENSE" class="doc-link-card" target="_blank">
+                <a href="LICENSE" class="doc-link-card" target="_blank">
                     ⚖️ MIT License
                 </a>
-                
-                <!-- 🔗 LINK 4: CODE OF CONDUCT -->
-                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/blob/main/CODE_OF_CONDUCT.md" class="doc-link-card" target="_blank">
+                <a href="CODE_OF_CONDUCT.md" class="doc-link-card" target="_blank">
                     🤝 Code of Conduct
                 </a>
+            </div>
+        </section>
+
         <footer>
             <p>&copy; 2026 Parallax Core Network Project. Open Source Software released under the MIT License.</p>
         </footer>
