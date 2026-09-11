@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 🔍 CRITICAL GOOGLE SEO META TAGS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax (PLX) Cryptocurrency | Node Miner & Wallet</title>
+    
+    <!-- This is the title Google displays in search results (optimized under 60 chars) -->
+    <title>Parallax (PLX) Cryptocurrency | Layer 1 PoW Node Wallet & Miner</title>
+    
+    <!-- This is the snippet description Google shows under your link (optimized under 160 chars) -->
+    <meta name="description" content="Official home of Parallax (PLX). An independent, open-source Layer 1 Proof-of-Work blockchain featuring a native GUI solo mining wallet node. 0% Premine fair launch.">
+    
+    <!-- Explicit search crawler indexing keywords -->
+    <meta name="keywords" content="Parallax, PLX, Parallax plx, cryptocurrency, crypto, new crypto mining, solo mining, CPU mining, PoW blockchain, Layer 1 crypto, open source miner, Bitcoin fork, Litecoin fork, Scrypt mining, crypto wallet miner, fair launch crypto, no premine coin, download crypto wallet, autonomous node miner">
+    
+    <!-- Direct instructions to Google's indexing robots to crawl and rank this site -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://parallaxcoin.xyz">
+
+    <!-- 🛠️ GOOGLE SEARCH CONSOLE VERIFICATION LINK CARD -->
+    <!-- REPLACE THE VALUE BELOW ONCE YOU GET YOUR CODE FROM GOOGLE SEARCH CONSOLE -->
+    <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE" />
+
     <style>
-        /* Restoring your preferred custom green design theme layout */
+        /* Signature custom rich dark green design theme layout */
         :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
-            --accent-green: #2ea44f;
+            --bg-color: #041a12; /* Deep, rich dark green background */
+            --card-bg: #09261b; /* Lighter green for feature cards */
+            --accent-green: #2ea44f; /* Vibrant green button color */
             --accent-hover: #2c974b;
-            --text-main: #c9d1d9;
-            --text-white: #f0f6fc;
-            --border-color: #30363d;
+            --text-main: #d1dbd6; /* Soft theme off-white text */
+            --text-white: #ffffff;
+            --border-color: #123d2d;
         }
 
         body {
@@ -21,8 +39,10 @@
             padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
+            background: linear-gradient(135deg, #03140e 0%, #062419 100%); /* Smooth color depth gradient */
             color: var(--text-main);
             line-height: 1.5;
+            min-height: 100vh;
         }
 
         .container {
@@ -46,7 +66,7 @@
 
         header p {
             font-size: 1.15rem;
-            color: #8b949e;
+            color: #a3b899;
             max-width: 600px;
             margin: 0 auto 2rem auto;
         }
@@ -80,13 +100,13 @@
         }
 
         .btn-outline {
-            background-color: #21262d;
-            color: #c9d1d9;
+            background-color: #0f3627;
+            color: #d1dbd6;
             border: 1px solid var(--border-color);
         }
 
         .btn-outline:hover {
-            background-color: #30363d;
+            background-color: #154a36;
             border-color: #8b949e;
         }
 
@@ -105,6 +125,7 @@
             padding: 1.5rem;
             border-radius: 6px;
             border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .card h3 {
@@ -115,15 +136,54 @@
         }
 
         .card p {
-            color: #8b949e;
+            color: #a3b8aa;
             margin-bottom: 0;
             font-size: 0.9rem;
+        }
+
+        /* Repository Documentation Box Grid */
+        .doc-section {
+            padding: 2rem 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .doc-section h2 {
+            font-size: 1.5rem;
+            color: var(--text-white);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .doc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .doc-link-card {
+            display: block;
+            background-color: #061d15;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.25rem;
+            text-align: center;
+            text-decoration: none;
+            color: #a3b899;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .doc-link-card:hover {
+            background-color: #0f3627;
+            border-color: var(--accent-green);
+            color: var(--text-white);
+            transform: translateY(-2px);
         }
 
         footer {
             text-align: center;
             padding: 3rem 0 1rem 0;
-            color: #484f58;
+            color: #275241;
             font-size: 0.8rem;
             border-top: 1px solid var(--border-color);
         }
@@ -137,11 +197,9 @@
             <p>Official open-source repository for the Parallax network node miner and desktop wallet ecosystem.</p>
             
             <div class="cta-buttons">
-                <!-- Direct Windows EXE Mainnet Link -->
                 <a href="https://github.com" class="btn btn-green">
                     Download Wallet & Miner (Mainnet)
                 </a>
-                <!-- Direct Wiki Navigation Link -->
                 <a href="https://github.com" class="btn btn-outline">
                     View Project Documentation Wiki
                 </a>
@@ -165,6 +223,30 @@
                     <h3>💎 Pure Mainnet Launch</h3>
                     <p>Officially live on Mainnet as of 09/09/2026. A transparent, verified zero-balance deployment executing directly from Genesis Block 0 with a strict 0% pre-mine allocation.</p>
                 </div>
+
+            </div>
+        </section>
+
+        <!-- Repository Documentation Blocks Section -->
+        <section class="doc-section">
+            <h2>Core Repository Specifications</h2>
+            <div class="doc-grid">
+                
+                <a href="https://github.com" class="doc-link-card">
+                    📄 View Readme Guide
+                </a>
+
+                <a href="https://github.com" class="doc-link-card">
+                    🛡️ Security Policy
+                </a>
+
+                <a href="https://github.com" class="doc-link-card">
+                    ⚖️ MIT License
+                </a>
+
+                <a href="https://github.com" class="doc-link-card">
+                    🤝 Code of Conduct
+                </a>
 
             </div>
         </section>
