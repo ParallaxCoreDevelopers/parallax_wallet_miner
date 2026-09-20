@@ -1,48 +1,37 @@
 # Parallax (PLX)
 
-Parallax (PLX) is a live independent Scrypt Proof-of-Work Layer 1 blockchain.
+**Parallax (PLX)** is an independent, open-source **Scrypt Proof-of-Work cryptocurrency and blockchain**.
 
-Parallax starts from its own genesis block at height 0. It is not a Litecoin fork at block 50,000.
+Parallax runs from its own **Genesis Block at height 0** and uses its own peer-to-peer network, blockchain history and native cryptocurrency, **PLX**.
 
-## Mainnet
+The official **Parallax Core** Windows application combines three core functions in one program:
 
-- Ticker: PLX
-- Network: MAINNET
-- Consensus: Scrypt Proof of Work
-- P2P Port: 19339
-- RPC Port: 19340
-- Genesis Block: 72b26135d67f262b8f9c33277c4be8499482d3cba475bc36291f6729dea08ae5
+**Full Node. Wallet. Miner.**
 
-## Windows Mainnet Wallet & Miner
+## Official Links
 
-Release v0.1.4 includes the tested Windows MAINNET wallet and miner:
+- Website: https://parallaxcoin.xyz/
+- Block Explorer: https://explorer.parallaxcoin.xyz/
+- GitHub: https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner
+- Releases: https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/releases
 
-`Parallax_Wallet_Miner_Mainnet.exe`
+## Parallax Mainnet
 
-SHA256:
+| Specification | Value |
+| --- | --- |
+| Cryptocurrency | Parallax |
+| Ticker | PLX |
+| Blockchain | Parallax Mainnet |
+| Consensus | Scrypt Proof-of-Work |
+| Native Asset | PLX |
+| Current Block Reward | 50 PLX |
+| Genesis Height | 0 |
+| Mainnet P2P Port | 19339 |
+| Mainnet RPC Port | 19340 |
+| Address HRP | plx |
+| MWEB HRP | plxmweb |
 
-`864aa2f45659959903659e16c3759b594b5b69726635b06df016156a3ada4388`
+### Mainnet Genesis Block
 
-Parallax wallet binaries for this release are Windows-only.
-
-## Mainnet Source Code
-
-The source corresponding to the Windows MAINNET release is publicly browsable in:
-
-`mainnet-source/`
-
-A downloadable source archive is also included with release v0.1.4:
-
-`Parallax_Wallet_Miner_Mainnet_Source_Code.zip`
-
-## Testnet Source
-
-The previous testnet source archive remains available separately as:
-
-`Parallax_Wallet_Miner_Testnet_Source_Code.zip`
-
-## Security
-
-Always verify downloaded binaries using the published SHA256 checksum.
-
-Private keys, wallet databases, RPC credentials, blockchain data, build artifacts, generated binaries, and backup files are not included in the public source tree.
+```text
+72b26135d67f262b8f9c33277c4be8499482d3cba475bc36291f6729dea08ae5
