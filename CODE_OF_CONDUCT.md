@@ -1,128 +1,203 @@
-# Contributor Covenant Code of Conduct
+# Parallax Core Code of Conduct
 
-## Our Pledge
+## Our Commitment
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, religion, or sexual identity
-and orientation.
+Parallax Core is an open-source cryptocurrency and blockchain project.
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+We want participation in the Parallax (PLX) community to remain respectful, constructive and welcoming to users, miners, developers, node operators, contributors and researchers.
+
+Everyone participating in Parallax project spaces is expected to treat others professionally and respectfully.
 
 ## Our Standards
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+Examples of positive behaviour include:
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+- Treating other community members with respect
+- Being patient with new users
+- Sharing technical information constructively
+- Giving useful and respectful feedback
+- Accepting reasonable technical criticism
+- Helping users understand Parallax safely
+- Respecting different levels of technical experience
+- Keeping discussions relevant and productive
+- Protecting the privacy and security of other users
+- Correcting inaccurate information when discovered
+- Disclosing technical problems responsibly
 
-Examples of unacceptable behavior include:
+Examples of unacceptable behaviour include:
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+- Harassment or intimidation
+- Threats or abusive behaviour
+- Personal attacks
+- Discriminatory or hateful language
+- Deliberate disruption of project discussions
+- Repeated spam
+- Publishing another person's private information without permission
+- Sharing private keys, credentials or personal wallet information belonging to another person
+- Attempting to deceive users into revealing wallet credentials
+- Impersonating Parallax Core Developers or other contributors
+- Publishing intentionally misleading information about official Parallax software
+- Promoting fraudulent Parallax downloads or websites
+- Malicious links or malware
+- Scams, phishing or wallet-draining attempts
+- Deliberately encouraging unsafe wallet or RPC configurations
 
-## Enforcement Responsibilities
+## Cryptocurrency Safety
 
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+Parallax is a cryptocurrency project, so community safety also includes protecting users from financial and technical harm.
 
-Community leaders have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct, and will communicate reasons for moderation
-decisions when appropriate.
+Never ask another user to provide:
+
+- Private keys
+- Wallet seed information
+- Wallet passphrases
+- RPC usernames or passwords
+- VPS passwords
+- SSH private keys
+- Private wallet backup files
+
+Official Parallax software will never require users to publicly disclose private wallet credentials.
+
+Community members should be especially cautious of anyone claiming to provide support while requesting access to private keys, wallet files or credentials.
+
+## Official Project Information
+
+Official Parallax resources include:
+
+Website:
+
+https://parallaxcoin.xyz/
+
+Block Explorer:
+
+https://explorer.parallaxcoin.xyz/
+
+GitHub:
+
+https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner
+
+Releases:
+
+https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/releases
+
+Users should verify project information against official sources whenever possible.
+
+## Technical Discussion
+
+Technical disagreement is allowed and expected in an open-source project.
+
+Contributors may disagree about:
+
+- Source code
+- Consensus rules
+- Mining
+- Networking
+- Wallet functionality
+- Security
+- Tokenomics
+- Software design
+- Future development
+
+Disagreement should remain focused on the technical subject rather than becoming personal.
+
+Evidence, reproducible results, source-code references and clear explanations are preferred over personal arguments.
 
 ## Scope
 
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address,
-posting via an official social media account, or acting as an appointed
-representative at an online or offline event.
+This Code of Conduct applies to official Parallax project spaces, including:
+
+- GitHub repositories
+- GitHub Issues
+- GitHub Pull Requests
+- GitHub Discussions
+- Project documentation
+- Official project websites
+- Official project communication channels
+
+It also applies when someone is publicly representing the Parallax project.
+
+## Contributor Responsibilities
+
+Project maintainers may remove, edit or reject contributions that violate this Code of Conduct.
+
+This may include:
+
+- Comments
+- Issues
+- Pull requests
+- Discussions
+- Documentation
+- Code contributions
+- Other project submissions
+
+Serious or repeated violations may result in restrictions from participating in project spaces.
+
+## Reporting Conduct Problems
+
+Conduct concerns may be reported to the Parallax Core maintainers through the official GitHub repository:
+
+https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner
+
+If the matter can be discussed publicly, a GitHub Issue may be used.
+
+If the report contains private, sensitive or security-related information, do not publish those details publicly.
+
+Instead, create a minimal issue requesting private contact with the maintainers without including sensitive information.
+
+Security vulnerabilities should follow the separate Parallax Security Policy:
+
+https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/blob/main/SECURITY.md
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
-.
-All complaints will be reviewed and investigated promptly and fairly.
+Reports will be reviewed based on:
 
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
+- Severity
+- Context
+- Evidence
+- Impact on other users
+- Repeated behaviour
+- Risk to the project or community
 
-## Enforcement Guidelines
+Possible responses may include:
 
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
+1. A request to correct behaviour
+2. A warning
+3. Removal of inappropriate content
+4. Temporary participation restrictions
+5. Permanent removal from project spaces in serious cases
 
-### 1. Correction
+The goal of enforcement is to protect constructive participation in the Parallax community.
 
-**Community Impact**: Use of inappropriate language or other behavior deemed
-unprofessional or unwelcome in the community.
+## Privacy
 
-**Consequence**: A private, written warning from community leaders, providing
-clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
+Reports involving harassment, security concerns or sensitive personal information should be handled with appropriate confidentiality.
 
-### 2. Warning
+Community members should never publish another person's private information without permission.
 
-**Community Impact**: A violation through a single incident or series
-of actions.
+## Open-Source Collaboration
 
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
-includes avoiding interactions in community spaces as well as external channels
-like social media. Violating these terms may lead to a temporary or
-permanent ban.
+Parallax Core welcomes constructive technical participation.
 
-### 3. Temporary Ban
+Contributions that improve:
 
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
+- Security
+- Reliability
+- Documentation
+- Wallet functionality
+- Node operation
+- Mining
+- Network stability
+- User experience
 
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
-private interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, is allowed during this period.
-Violating these terms may lead to a permanent ban.
+are encouraged.
 
-### 4. Permanent Ban
+The success of an open-source blockchain depends on users and contributors being able to participate safely and respectfully.
 
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior,  harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
+---
 
-**Consequence**: A permanent ban from any sort of public interaction within
-the community.
+# Parallax (PLX)
 
-## Attribution
+**Independent Scrypt Proof-of-Work Blockchain**
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.0, available at
-https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
-
-Community Impact Guidelines were inspired by [Mozilla's code of conduct
-enforcement ladder](https://github.com/mozilla/diversity).
-
-[homepage]: https://www.contributor-covenant.org
-
-For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
-https://www.contributor-covenant.org/translations.
+**Full Node. Wallet. Miner. Security. Network Tools. One application.**
