@@ -1,11 +1,171 @@
-Tokenomics
+# Parallax (PLX) Tokenomics
 
-Total Supply: 1 billion PLX coins
+Parallax (PLX) is the native cryptocurrency of the independent Parallax Scrypt Proof-of-Work blockchain.
 
-Free Public Mining: 40% (400M PLX) - Largest allocation for free crypto mining
+PLX is created through blockchain mining and can be independently verified using the public Parallax block explorer.
 
-Development: 30% (300M PLX) with a 4-year vesting schedule
+## Live Mined Supply
 
-Liquidity: 20% (200M PLX) for exchange liquidity and trading
+The current mined PLX supply is determined directly from the live Parallax blockchain.
 
-Community Rewards: 10% (100M PLX) for community incentives and airdrops (coming soon)
+Official block explorer:
+
+https://explorer.parallaxcoin.xyz/
+
+The live blockchain should be treated as the authoritative source for the amount of PLX currently mined and recorded on-chain.
+
+## Current Block Reward
+
+Current mining reward:
+
+**50 PLX per block**
+
+PLX is distributed through Scrypt Proof-of-Work mining.
+
+There was no separate token contract or ERC-20/BEP-20 issuance because PLX is the native asset of the Parallax blockchain.
+
+## Public Mining
+
+Parallax is designed around public Proof-of-Work mining.
+
+Users running Parallax Core can participate directly in Scrypt mining using the integrated mining interface.
+
+Mining performs two functions:
+
+- Secures the Parallax blockchain
+- Distributes newly mined PLX
+
+## Long-Term Economic Model
+
+The original Parallax economic model was designed around a long-term target of:
+
+**1,000,000,000 PLX**
+
+The intended economic allocation model is:
+
+| Allocation | Percentage | Long-Term Target |
+| --- | ---: | ---: |
+| Public Mining | 40% | 400,000,000 PLX |
+| Development | 30% | 300,000,000 PLX |
+| Liquidity / Exchange Trading | 20% | 200,000,000 PLX |
+| Community Rewards | 10% | 100,000,000 PLX |
+
+These figures describe the project's **long-term economic allocation model**.
+
+They should not be interpreted as currently minted or pre-allocated on-chain balances.
+
+## Current On-Chain Supply
+
+The current on-chain PLX supply is created through active blockchain mining.
+
+It can be verified at any time through:
+
+https://explorer.parallaxcoin.xyz/
+
+This means the amount of PLX presently existing on-chain can be checked independently rather than relying on a manually published supply figure.
+
+## Development Allocation
+
+Long-term economic planning reserves up to:
+
+**30% — 300,000,000 PLX**
+
+for project development.
+
+The original model envisages a multi-year development allocation rather than an immediate unrestricted distribution.
+
+Any future implementation or distribution mechanism should be publicly documented before use.
+
+## Liquidity and Exchange Trading
+
+Long-term economic planning reserves up to:
+
+**20% — 200,000,000 PLX**
+
+for exchange liquidity and trading infrastructure.
+
+This allocation is intended to support future PLX markets, exchange liquidity and broader availability.
+
+It does not mean that 200 million PLX currently exists in exchange wallets or has already been minted.
+
+## Community Rewards
+
+Long-term economic planning reserves up to:
+
+**10% — 100,000,000 PLX**
+
+for community incentives and future ecosystem participation.
+
+Potential uses may include:
+
+- Community rewards
+- Ecosystem incentives
+- Promotional distributions
+- Development participation
+- Future community programs
+
+Any future distribution program should be publicly documented before launch.
+
+## Supply Transparency
+
+Parallax publishes a public blockchain explorer so users, miners, exchanges and researchers can independently inspect:
+
+- Current mined PLX supply
+- Block height
+- Block rewards
+- Transactions
+- Addresses
+- Network hashrate
+- Blockchain activity
+
+Explorer:
+
+https://explorer.parallaxcoin.xyz/
+
+## Supply Policy Status
+
+The **1 billion PLX figure represents the project's intended long-term economic model**.
+
+The precise long-term emission and allocation implementation is being reviewed to ensure that published tokenomics remain aligned with the active Parallax Mainnet consensus rules.
+
+Until that process is completed, Parallax does not describe 1 billion PLX as a currently enforced on-chain hard cap.
+
+This distinction is intentional and is provided for transparency.
+
+## Native Cryptocurrency
+
+PLX is not a smart-contract token.
+
+- Name: Parallax
+- Ticker: PLX
+- Asset Type: Native blockchain cryptocurrency
+- Consensus: Scrypt Proof-of-Work
+- Blockchain: Parallax Mainnet
+- Current Block Reward: 50 PLX
+- Contract Address: Not applicable
+
+## Official Resources
+
+Official website:
+
+https://parallaxcoin.xyz/
+
+Official block explorer:
+
+https://explorer.parallaxcoin.xyz/
+
+Official GitHub:
+
+https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner
+
+Mainnet source code:
+
+https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/tree/main/mainnet-source
+
+---
+
+**Parallax (PLX)**
+
+**Independent Scrypt Proof-of-Work Blockchain**
+
+**Transparent on-chain supply. Public mining. Public source code.**
