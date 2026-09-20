@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- 🔍 GOOGLE SEARCH ENGINE OPTIMIZATION (SEO) & TAGS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax (PLX) Cryptocurrency | Layer 1 PoW Node Wallet & Miner</title>
-    <meta name="description" content="Official home of Parallax (PLX). An independent, open-source Layer 1 Proof-of-Work blockchain featuring a native GUI solo mining wallet node. 0% Premine fair launch.">
-    <meta name="keywords" content="Parallax, PLX, Parallax plx, cryptocurrency, crypto, new crypto mining, solo mining, CPU mining, PoW blockchain, Layer 1 crypto, open source miner, Bitcoin fork, Litecoin fork, Scrypt mining, crypto wallet miner, fair launch crypto, no premine coin, download crypto wallet, autonomous node miner">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://parallaxcoin.xyz">
 
-    <!-- 🟢 LOGO FAVICON ROUTE -->
+    <title>Parallax (PLX) | Scrypt Proof-of-Work Cryptocurrency</title>
+
+    <meta name="description" content="Official website for Parallax (PLX), an independent open-source Scrypt Proof-of-Work cryptocurrency with a Windows full-node wallet, integrated solo miner, public source code and live blockchain explorer.">
+
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Parallax Core Developers">
+
+    <link rel="canonical" href="https://parallaxcoin.xyz/">
     <link rel="icon" type="image/png" href="logo.png">
 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Parallax (PLX) | Scrypt Proof-of-Work Cryptocurrency">
+    <meta property="og:description" content="Explore Parallax (PLX), an independent open-source Scrypt Proof-of-Work blockchain with a full-node Windows wallet, integrated solo miner and live block explorer.">
+    <meta property="og:url" content="https://parallaxcoin.xyz/">
+    <meta property="og:image" content="https://parallaxcoin.xyz/logo.png">
+    <meta property="og:site_name" content="Parallax (PLX)">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Parallax (PLX) Cryptocurrency">
+    <meta name="twitter:description" content="Independent open-source Scrypt Proof-of-Work blockchain, Windows full-node wallet, integrated miner and live block explorer.">
+    <meta name="twitter:image" content="https://parallaxcoin.xyz/logo.png">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Parallax",
+        "alternateName": "Parallax PLX",
+        "url": "https://parallaxcoin.xyz/",
+        "description": "Official website for the Parallax PLX independent Scrypt Proof-of-Work blockchain."
+    }
+    </script>
+
     <style>
-        /* Custom vibrant dark green aesthetic theme layout */
         :root {
             --bg-color: #041a12;
             --card-bg: #09261b;
             --accent-green: #2ea44f;
-            --accent-hover: #2c974b;
             --text-main: #d1dbd6;
             --text-white: #ffffff;
+            --text-muted: #a3b8aa;
             --border-color: #123d2d;
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         body {
             margin: 0;
             padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
             background: linear-gradient(135deg, #03140e 0%, #062419 100%);
             color: var(--text-main);
-            line-height: 1.5;
+            line-height: 1.6;
             min-height: 100vh;
-            position: relative;
         }
 
-        /* 🏷️ LOGO CORNER CONTAINER */
         .logo-container {
             position: absolute;
             top: 25px;
@@ -64,29 +88,29 @@
         }
 
         .container {
-            max-width: 1012px;
+            max-width: 1050px;
             margin: 0 auto;
             padding: 2rem;
         }
 
         header {
             text-align: center;
-            padding: 6rem 1rem 3rem 1rem;
+            padding: 6rem 1rem 3rem;
             border-bottom: 1px solid var(--border-color);
         }
 
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            font-size: 2.7rem;
+            margin: 0 0 0.75rem;
             color: var(--text-white);
-            font-weight: 600;
+            font-weight: 700;
         }
 
         header p {
             font-size: 1.15rem;
             color: #a3b899;
-            max-width: 600px;
-            margin: 0 auto 2rem auto;
+            max-width: 760px;
+            margin: 0 auto 2rem;
         }
 
         .cta-buttons {
@@ -98,22 +122,12 @@
 
         .btn {
             display: inline-block;
-            padding: 0.5rem 1.25rem;
-            font-weight: 500;
+            padding: 0.7rem 1.3rem;
+            font-weight: 600;
             text-decoration: none;
             border-radius: 6px;
-            transition: background-color 0.2s ease;
-            font-size: 0.9rem;
-        }
-
-        .btn-green {
-            background-color: var(--accent-green);
-            color: #ffffff;
-            border: 1px solid rgba(240, 246, 252, 0.1);
-        }
-
-        .btn-green:hover {
-            background-color: var(--accent-hover);
+            transition: 0.2s ease;
+            font-size: 0.92rem;
         }
 
         .btn-outline {
@@ -124,49 +138,74 @@
 
         .btn-outline:hover {
             background-color: #154a36;
+            border-color: var(--accent-green);
+            color: #ffffff;
         }
 
-        .features-section {
+        section {
             padding: 3rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--text-white);
+            font-size: 1.7rem;
+            margin: 0 0 0.75rem;
+        }
+
+        .section-intro {
+            max-width: 760px;
+            margin: 0 auto 2rem;
+            text-align: center;
+            color: var(--text-muted);
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 1.5rem;
         }
 
         .card {
             background-color: var(--card-bg);
             padding: 1.5rem;
-            border-radius: 6px;
+            border-radius: 7px;
             border: 1px solid var(--border-color);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         .card h3 {
-            font-size: 1.25rem;
-            margin-top: 0;
-            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            margin: 0 0 0.7rem;
             color: var(--text-white);
         }
 
         .card p {
-            color: #a3b8aa;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .network-section {
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .network-value {
+            display: block;
+            color: #ffffff;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+
+        .network-label {
+            color: #a3b899;
             font-size: 0.9rem;
         }
 
-        /* 📦 DOCUMENT NAVIGATION BOX GRID */
         .doc-section {
-            padding: 2rem 0;
             border-top: 1px solid var(--border-color);
-        }
-
-        .doc-section h2 {
-            font-size: 1.5rem;
-            color: var(--text-white);
-            margin-bottom: 1.5rem;
-            text-align: center;
         }
 
         .doc-grid {
@@ -184,7 +223,7 @@
             text-align: center;
             text-decoration: none;
             color: #a3b899;
-            font-weight: 500;
+            font-weight: 600;
             transition: all 0.2s ease;
         }
 
@@ -197,10 +236,14 @@
 
         footer {
             text-align: center;
-            padding: 3rem 0 1rem 0;
-            color: #275241;
-            font-size: 0.8rem;
+            padding: 3rem 0 1rem;
+            color: #4a7564;
+            font-size: 0.82rem;
             border-top: 1px solid var(--border-color);
+        }
+
+        footer a {
+            color: #7cae99;
         }
 
         @media (max-width: 768px) {
@@ -208,87 +251,259 @@
                 position: relative;
                 top: 0;
                 left: 0;
-                margin: 1.5rem auto 0 auto;
+                margin: 1.5rem auto 0;
             }
+
             header {
                 padding: 2rem 1rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
             }
         }
     </style>
 </head>
+
 <body>
 
-    <!-- BRAND LOGO ELEMENT -->
     <div class="logo-container">
-        <img src="logo.png" alt="Parallax Logo">
+        <img src="logo.png" alt="Parallax PLX cryptocurrency logo">
         <div class="logo-text">Parallax PLX</div>
     </div>
 
-    <div class="container">
-        <!-- HEADER WITH WORKING ACTION LINKS -->
+    <main class="container">
+
         <header>
             <h1>Parallax (PLX) Cryptocurrency</h1>
-            <p>Official open-source repository for the Parallax network node miner and desktop wallet ecosystem.</p>
-            
+
+            <p>
+                Parallax is an independent, open-source Scrypt Proof-of-Work
+                blockchain with its own Genesis Block 0, native PLX currency,
+                Windows full-node wallet and integrated solo mining interface.
+            </p>
+
             <div class="cta-buttons">
-                <!-- 🔗 TARGET 1: FIXED MAINNET WALLET EXEC FILE LINK -->
-                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/releases/download/v0.1.4/Parallax_Wallet_Miner_Mainnet.exe" class="btn btn-green">
-                    Download Wallet & Miner (Mainnet)
+
+                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/releases/download/v0.1.4/Parallax_Wallet_Miner_Mainnet.exe"
+                   class="btn btn-outline">
+                    Download Parallax Core
                 </a>
-                <!-- 🔗 TARGET 2: FIXED PUBLIC PROJECT WIKI LINK -->
-                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/wiki" class="btn btn-outline" target="_blank">
-                    View Project Documentation Wiki
+
+                <a href="https://explorer.parallaxcoin.xyz/"
+                   class="btn btn-outline"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Live Block Explorer
                 </a>
+
+                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner"
+                   class="btn btn-outline"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub Source
+                </a>
+
             </div>
         </header>
 
-        <!-- ARCHITECTURAL FEATURES MATRIX -->
-        <section class="features-section">
+        <section>
+
+            <h2 class="section-title">About Parallax</h2>
+
+            <p class="section-intro">
+                PLX is the native cryptocurrency of the Parallax blockchain.
+                The network uses Scrypt Proof-of-Work and public mining, while
+                Parallax Core combines a full blockchain node, wallet and
+                integrated mining interface in one Windows application.
+            </p>
+
             <div class="grid">
-                <div class="card">
-                    <h3>🚀 Upgraded Core Architecture</h3>
-                    <p>Leverages the historical cryptography and security profiles of Bitcoin and Litecoin, refined to clean up legacy bottlenecks and support custom block target parameters.</p>
-                </div>
-                <div class="card">
-                    <h3>⚒️ Integrated Solo Mining UI</h3>
-                    <p>No complicated terminal syntax or pools required. Features a native "Start/Stop Mining" graphical toggle button built directly into the core desktop application window.</p>
-                </div>
-                <div class="card">
-                    <h3>💎 Pure Mainnet Launch</h3>
-                    <p>Officially live on Mainnet as of 09/09/2026. A transparent, verified zero-balance deployment executing directly from Genesis Block 0 with a strict 0% pre-mine allocation.</p>
-                </div>
+
+                <article class="card">
+                    <h3>Independent Blockchain</h3>
+                    <p>
+                        Parallax operates from its own Genesis Block at height 0
+                        and maintains its own blockchain, peer-to-peer network,
+                        transaction history and native PLX currency.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Scrypt Proof-of-Work</h3>
+                    <p>
+                        Blocks are secured through Scrypt Proof-of-Work.
+                        The current block subsidy is 50 PLX, distributed through
+                        network mining.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Full Node, Wallet & Miner</h3>
+                    <p>
+                        Parallax Core provides blockchain synchronization,
+                        transaction management and integrated solo mining from
+                        a single desktop application.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Public Source Code</h3>
+                    <p>
+                        The Parallax mainnet source code and Windows release are
+                        publicly available through the official GitHub repository.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Live Blockchain Explorer</h3>
+                    <p>
+                        Blocks, transactions, addresses, network statistics and
+                        current mined PLX supply can be independently inspected
+                        using the public Parallax block explorer.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Live Mainnet</h3>
+                    <p>
+                        Parallax MAINNET is operational and actively producing
+                        blocks through its public Proof-of-Work network.
+                    </p>
+                </article>
+
             </div>
         </section>
 
-        <!-- ACCESSIBLE BOX NAVIGATION FOR REPOSITORY SPECIFICATIONS -->
+        <section class="network-section">
+
+            <h2 class="section-title">Parallax Network Live</h2>
+
+            <p class="section-intro">
+                Live network statistics will be published here directly from
+                the Parallax blockchain infrastructure.
+            </p>
+
+            <div class="grid">
+
+                <div class="card">
+                    <span class="network-label">Block Height</span>
+                    <span class="network-value" id="network-height">
+                        Live data coming next
+                    </span>
+                </div>
+
+                <div class="card">
+                    <span class="network-label">Mined PLX Supply</span>
+                    <span class="network-value" id="network-supply">
+                        Live data coming next
+                    </span>
+                </div>
+
+                <div class="card">
+                    <span class="network-label">Network Hashrate</span>
+                    <span class="network-value" id="network-hashrate">
+                        Live data coming next
+                    </span>
+                </div>
+
+                <div class="card">
+                    <span class="network-label">Active Mining</span>
+                    <span class="network-value" id="network-miners">
+                        Live data coming next
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
         <section class="doc-section">
-            <h2>Core Repository Specifications</h2>
+
+            <h2 class="section-title">Official Parallax Resources</h2>
+
+            <p class="section-intro">
+                Official source code, blockchain data, project documentation
+                and security information for Parallax PLX.
+            </p>
+
             <div class="doc-grid">
-                <a href="README.md" class="doc-link-card" target="_blank">
-                    📄 View Readme Guide
+
+                <a href="README.md"
+                   class="doc-link-card"
+                   target="_blank">
+                    📄 Project README
                 </a>
-                <a href="SECURITY.md" class="doc-link-card" target="_blank">
+
+                <a href="block-explorer.html"
+                   class="doc-link-card">
+                    🧊 Block Explorer
+                </a>
+
+                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/tree/main/mainnet-source"
+                   class="doc-link-card"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    💻 Mainnet Source
+                </a>
+
+                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/blob/main/tokenomics"
+                   class="doc-link-card"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    📈 Tokenomics
+                </a>
+
+                <a href="SECURITY.md"
+                   class="doc-link-card"
+                   target="_blank">
                     🛡️ Security Policy
                 </a>
-                <a href="LICENSE" class="doc-link-card" target="_blank">
+
+                <a href="LICENSE"
+                   class="doc-link-card"
+                   target="_blank">
                     ⚖️ MIT License
                 </a>
-                <a href="CODE_OF_CONDUCT.md" class="doc-link-card" target="_blank">
+
+                <a href="CODE_OF_CONDUCT.md"
+                   class="doc-link-card"
+                   target="_blank">
                     🤝 Code of Conduct
-                    </a>
-                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/blob/main/tokenomics" class="doc-link-card" target="_blank">
-                    📈 tokenomics
-                     </a>
-                  <a href="block-explorer.html" class="doc-link-card" target="_blank">
-                    🧊 block explorer
-                     </a>
+                </a>
+
             </div>
+
         </section>
 
         <footer>
-            <p>&copy; 2026 Parallax Core Network Project. Open Source Software released under the MIT License.</p>
+
+            <p>
+                &copy; 2026 Parallax Core Network Project.
+                Open-source software released under the MIT License.
+            </p>
+
+            <p>
+                Official website:
+                <a href="https://parallaxcoin.xyz/">
+                    parallaxcoin.xyz
+                </a>
+
+                &nbsp;|&nbsp;
+
+                Explorer:
+                <a href="https://explorer.parallaxcoin.xyz/">
+                    explorer.parallaxcoin.xyz
+                </a>
+            </p>
+
         </footer>
-    </div>
+
+    </main>
 
 </body>
 </html>
