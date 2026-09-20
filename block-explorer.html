@@ -1,91 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parallax (PLX) Block Explorer</title>
-  <meta name="description" content="Official Parallax (PLX) blockchain explorer. View blocks, transactions, addresses, network statistics and circulating mined supply.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #002b20;
-      color: #ffffff;
-      text-align: center;
-    }
+    <title>Parallax (PLX) Block Explorer | Live Blockchain Data</title>
 
-    .container {
-      max-width: 850px;
-      margin: 0 auto;
-      padding: 80px 20px;
-    }
+    <meta name="description" content="Official Parallax (PLX) block explorer. View live Parallax blockchain blocks, transactions, addresses, mined PLX supply, network hashrate and blockchain activity.">
 
-    h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Parallax Core Developers">
 
-    p {
-      color: #b8d3c8;
-      font-size: 18px;
-      line-height: 1.7;
-    }
+    <link rel="canonical" href="https://parallaxcoin.xyz/block-explorer.html">
+    <link rel="icon" type="image/png" href="logo.png">
 
-    .explorer-button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 16px 30px;
-      background: #1fa2d6;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 18px;
-      font-weight: bold;
-    }
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Parallax (PLX) Block Explorer">
+    <meta property="og:description" content="Explore live blocks, transactions, addresses, network statistics and mined PLX supply on the Parallax blockchain.">
+    <meta property="og:url" content="https://parallaxcoin.xyz/block-explorer.html">
+    <meta property="og:image" content="https://parallaxcoin.xyz/logo.png">
+    <meta property="og:site_name" content="Parallax (PLX)">
 
-    .explorer-button:hover {
-      opacity: 0.9;
-    }
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Parallax (PLX) Block Explorer">
+    <meta name="twitter:description" content="View live Parallax PLX blockchain data, blocks, transactions, addresses, supply and network activity.">
+    <meta name="twitter:image" content="https://parallaxcoin.xyz/logo.png">
 
-    .home-link {
-      display: block;
-      margin-top: 35px;
-      color: #9fc7b7;
-      text-decoration: none;
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Parallax PLX Block Explorer",
+        "url": "https://parallaxcoin.xyz/block-explorer.html",
+        "description": "Official gateway to the live Parallax PLX blockchain explorer."
     }
-  </style>
+    </script>
+
+    <style>
+        :root {
+            --bg-color: #041a12;
+            --card-bg: #09261b;
+            --accent-green: #2ea44f;
+            --text-main: #d1dbd6;
+            --text-white: #ffffff;
+            --text-muted: #a3b8aa;
+            --border-color: #123d2d;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #03140e 0%, #062419 100%);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .logo-container {
+            text-align: center;
+            padding-top: 2.5rem;
+        }
+
+        .logo-container img {
+            width: 75px;
+            height: auto;
+        }
+
+        .logo-text {
+            color: var(--text-white);
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 0.4rem;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem 3rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--text-white);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            max-width: 720px;
+            margin: 0 auto 1.5rem;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.4rem;
+            background-color: #0f3627;
+            color: #d1dbd6;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #154a36;
+            border-color: var(--accent-green);
+            color: #ffffff;
+        }
+
+        section {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            color: var(--text-white);
+            text-align: center;
+            font-size: 1.7rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .section-intro {
+            max-width: 720px;
+            margin: 0 auto 2rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 7px;
+            padding: 1.5rem;
+        }
+
+        .card h2,
+        .card h3 {
+            color: var(--text-white);
+            margin-top: 0;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        .explorer-address {
+            word-break: break-word;
+            color: #9bd4b9;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            padding: 2rem 0 1rem;
+            color: #4a7564;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #7cae99;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <div class="container">
+    <div class="logo-container">
+        <img src="logo.png" alt="Parallax PLX cryptocurrency logo">
+        <div class="logo-text">Parallax PLX</div>
+    </div>
 
-    <h1>Parallax (PLX) Block Explorer</h1>
+    <main class="container">
 
-    <p>
-      Explore the live Parallax blockchain.
-    </p>
+        <header>
 
-    <p>
-      View blocks, transactions, wallet addresses, network statistics,
-      mining activity and the current mined PLX supply directly from the
-      Parallax network.
-    </p>
+            <h1>Parallax (PLX) Block Explorer</h1>
 
-    <a
-      href="https://explorer.parallaxcoin.xyz/"
-      class="explorer-button"
-      target="_blank"
-      rel="noopener noreferrer">
-      Open Parallax Block Explorer
-    </a>
+            <p>
+                View live data directly from the Parallax blockchain.
+                Search blocks, transactions and wallet addresses, and monitor
+                current blockchain height, mined PLX supply and network activity.
+            </p>
 
-    <a href="index.html" class="home-link">
-      ← Return to Parallax Home
-    </a>
+            <div class="button-row">
 
-  </div>
+                <a href="https://explorer.parallaxcoin.xyz/"
+                   class="btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Open Live Block Explorer
+                </a>
+
+                <a href="index.html"
+                   class="btn">
+                    Return to Parallax Home
+                </a>
+
+                <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner"
+                   class="btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub Source
+                </a>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <h2 class="section-title">Explore the Parallax Blockchain</h2>
+
+            <p class="section-intro">
+                The Parallax block explorer provides a public view of the
+                blockchain so network activity can be independently inspected
+                without relying only on the desktop wallet.
+            </p>
+
+            <div class="grid">
+
+                <article class="card">
+                    <h3>Blocks</h3>
+                    <p>
+                        View Parallax block heights, block hashes, timestamps
+                        and confirmed blockchain activity.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Transactions</h3>
+                    <p>
+                        Search transaction hashes and inspect confirmed PLX
+                        transactions recorded on the blockchain.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Addresses</h3>
+                    <p>
+                        Search Parallax addresses and inspect publicly available
+                        blockchain transaction and balance information.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Mined PLX Supply</h3>
+                    <p>
+                        Monitor the current mined PLX supply reported directly
+                        from the live Parallax node.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Network Hashrate</h3>
+                    <p>
+                        View current Proof-of-Work network hashrate and mining
+                        activity visible from the Parallax network.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Open Blockchain Data</h3>
+                    <p>
+                        The explorer provides public verification of Parallax
+                        blockchain activity for users, miners, developers and
+                        exchange integrations.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="card">
+
+                <h2>Official Explorer Address</h2>
+
+                <p>
+                    The official Parallax PLX block explorer is:
+                </p>
+
+                <p class="explorer-address">
+                    https://explorer.parallaxcoin.xyz/
+                </p>
+
+                <p>
+                    Always verify that you are using the official Parallax
+                    website or explorer when checking blockchain information.
+                </p>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <p>
+                &copy; 2026 Parallax Core Network Project.
+                Open-source software released under the MIT License.
+            </p>
+
+            <p>
+                <a href="https://parallaxcoin.xyz/">Official Website</a>
+                &nbsp;|&nbsp;
+                <a href="https://explorer.parallaxcoin.xyz/">Live Explorer</a>
+            </p>
+
+        </footer>
+
+    </main>
 
 </body>
 </html>
