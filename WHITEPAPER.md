@@ -1,13 +1,15 @@
 # Parallax (PLX) Whitepaper
 
-## Independent Scrypt Proof-of-Work Cryptocurrency
+## Independent Layer 1 Scrypt Proof-of-Work Cryptocurrency
 
 **Project:** Parallax  
 **Ticker:** PLX  
-**Network:** Parallax Mainnet  
+**Blockchain:** Parallax Mainnet  
+**Asset Type:** Native Layer 1 Cryptocurrency  
 **Consensus:** Proof of Work  
 **Mining Algorithm:** Scrypt  
-**Native Asset:** PLX  
+**Native Currency:** PLX  
+**Official Software:** Parallax Core  
 **Official Website:** https://parallaxcoin.xyz/  
 **Block Explorer:** https://explorer.parallaxcoin.xyz/  
 **Source Code:** https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner  
@@ -16,15 +18,23 @@
 
 ## 1. Introduction
 
-Parallax (PLX) is an independent open-source Proof-of-Work cryptocurrency operating on its own blockchain.
+Parallax (PLX) is an independent open-source Layer 1 cryptocurrency operating on its own blockchain.
 
-PLX is the native currency of the Parallax network. It is not an ERC-20, BEP-20, or other token issued on top of an external blockchain and therefore does not have a token contract address.
+PLX is the native currency of the Parallax network. It is not an ERC-20, BEP-20 or other token issued on top of another blockchain and therefore does not require a token contract address for native transfers.
 
-The Parallax blockchain begins from its own Genesis Block 0 and maintains its own independent transaction and block history.
+The Parallax blockchain begins from its own Genesis Block 0 and maintains its own independent block history, transaction history, peer-to-peer network and consensus rules.
 
-Parallax uses the Scrypt Proof-of-Work mining algorithm and is designed around a straightforward model in which miners contribute computational work to produce blocks, validate transactions, secure the network, and receive newly generated PLX as block rewards.
+Parallax uses Scrypt Proof-of-Work consensus. Miners contribute computational hashing power to create blocks, confirm transactions, extend the blockchain and participate in securing the network.
 
-The official Parallax Core application combines a full blockchain node, native wallet, integrated Scrypt miner, security features, and network diagnostic tools in one Windows desktop application.
+The current block subsidy is 50 PLX per block.
+
+The official desktop application, Parallax Core, combines a full blockchain node, native PLX wallet, integrated Scrypt mining controls, wallet encryption, backup tools, message signing and verification, peer information, network traffic information, blockchain information and RPC tools in one Windows application.
+
+Parallax Core should therefore not be viewed merely as a Layer 1 wallet.
+
+Parallax is the Layer 1 blockchain.
+
+Parallax Core is the official full-node software used to participate directly in that Layer 1 network.
 
 ---
 
@@ -32,22 +42,33 @@ The official Parallax Core application combines a full blockchain node, native w
 
 Parallax was created around several core objectives:
 
-- Maintain an independent public blockchain.
-- Use Proof-of-Work consensus and Scrypt mining.
-- Allow users to independently operate full nodes.
-- Provide a native wallet without relying on custodial services.
-- Make mining accessible directly through the official desktop application.
+- Operate an independent public blockchain.
+- Maintain its own native PLX cryptocurrency.
+- Use Scrypt Proof-of-Work consensus.
+- Allow users to independently operate full blockchain nodes.
+- Provide a native wallet without requiring custodial services.
+- Integrate optional mining directly into the official desktop application.
+- Provide wallet encryption and security tools.
+- Provide peer, network traffic and node information.
 - Keep blockchain activity publicly verifiable.
-- Publish the project source code for independent review.
-- Develop an open network that can support miners, nodes, exchanges, explorers, and other services without requiring centralized control of the blockchain.
+- Publish source code for independent inspection.
+- Support future integration by miners, pools, exchanges, explorers and infrastructure providers.
 
-Parallax is designed as a native cryptocurrency network rather than as a token project built on an existing smart-contract platform.
+Parallax is a native blockchain project rather than a token project built on another smart-contract network.
 
 ---
 
-## 3. Parallax Blockchain
+## 3. Layer 1 Blockchain
 
-The Parallax network maintains its own blockchain and Genesis Block 0.
+Parallax is a Layer 1 blockchain.
+
+A Layer 1 blockchain maintains its own consensus rules, transaction history, peer-to-peer network and native cryptocurrency.
+
+PLX exists directly on the Parallax blockchain.
+
+Native PLX transfers do not depend on Ethereum, BNB Chain or another external blockchain.
+
+The Parallax network begins from its own Genesis Block 0.
 
 ### Mainnet Genesis Block
 
@@ -59,23 +80,9 @@ Genesis transaction:
 
 `f350acf4761d6947161447bde2720fa39e77fb11509ccd7314a0701253e157da`
 
-The blockchain can be independently inspected through the public Parallax Explorer:
+The live blockchain can be inspected through:
 
 https://explorer.parallaxcoin.xyz/
-
-The explorer provides public access to blockchain information including:
-
-- Blocks
-- Transactions
-- Addresses
-- Mined PLX supply
-- Network statistics
-- Blockchain height
-- Network hashrate
-
-Parallax maintains its own chain history and does not share historical blocks with another cryptocurrency.
-
-The software is based on established open-source Bitcoin-family technology, but the Parallax blockchain itself begins independently from its own Genesis Block 0.
 
 ---
 
@@ -83,187 +90,219 @@ The software is based on established open-source Bitcoin-family technology, but 
 
 Parallax uses Proof-of-Work consensus.
 
-Miners perform computational work to search for valid blocks. When a valid block is produced and accepted by the network, it extends the Parallax blockchain.
+Miners perform computational work to search for valid blocks.
+
+When a valid block is accepted by the network, it extends the Parallax blockchain.
 
 Proof-of-Work provides several functions:
 
 - Orders transactions into blocks.
-- Makes alteration of historical blockchain data computationally expensive.
-- Allows independent nodes to determine the valid blockchain.
-- Distributes newly generated PLX through mining.
-- Provides an open mechanism for network participation.
+- Distributes newly mined PLX.
+- Provides an open mining mechanism.
+- Allows nodes to independently verify the blockchain.
+- Makes rewriting historical blockchain data computationally expensive.
+- Allows network participants to reach consensus on the valid chain.
 
-Parallax uses the **Scrypt** Proof-of-Work algorithm.
-
-Scrypt is a widely implemented mining algorithm supported by existing mining software and hardware.
+Parallax uses the Scrypt hashing algorithm.
 
 ---
 
-## 5. Mining and Block Rewards
+## 5. Scrypt Mining
 
-PLX enters circulation through blockchain mining.
+Scrypt is the Proof-of-Work algorithm used by the Parallax blockchain.
+
+Mining participants contribute hashing power to search for valid blocks.
 
 The current Parallax block subsidy is:
 
 **50 PLX per block**
 
-Miners may participate using the integrated miner provided with Parallax Core or compatible external Scrypt mining software.
+Mining is optional.
 
-Mining is not dependent on ownership of a special token, staking balance, or validator permission.
+Users are not required to mine in order to use the wallet, run a node, receive PLX or send PLX.
 
-Participants contribute hashing power and compete to produce valid blocks according to the network consensus rules.
+Parallax Core includes graphical Start Mining and Stop Mining controls so the user can choose whether mining should run.
 
-Mining statistics and network hashrate can be independently observed through the Parallax block explorer.
+Compatible external Scrypt mining software may also be used where supported.
 
-Parallax may also be mined through compatible mining pools where supported. Pool payout policies are determined by individual pool operators and do not alter the underlying blockchain block reward.
+Mining pools may independently support PLX in the future.
+
+Pool payout systems do not change the underlying Parallax block reward or blockchain consensus rules.
 
 ---
 
 ## 6. Parallax Core
 
-Parallax Core is the official Windows software for interacting with the Parallax network.
+Parallax Core is the official Windows full-node application for the Parallax blockchain.
 
-It combines several functions in one application:
+It combines:
 
 **Full Node. Wallet. Miner. Security. Network Tools. One application.**
 
-### Full Blockchain Node
+Parallax Core is more than a cryptocurrency wallet.
 
-Parallax Core can download, verify, and maintain a local copy of the Parallax blockchain.
+It is the primary desktop software used to directly participate in the Parallax network.
 
-Running a full node allows a user to independently verify network activity rather than relying entirely on a third-party service.
+---
 
-### Native PLX Wallet
+## 7. Full Blockchain Node
 
-Parallax Core contains a native wallet for:
+Parallax Core can download, validate and maintain a local copy of the Parallax blockchain.
+
+A full node independently checks blockchain data according to the network consensus rules.
+
+This reduces dependence on third-party hosted wallet services.
+
+Node functionality includes access to blockchain information and network status.
+
+---
+
+## 8. Native PLX Wallet
+
+Parallax Core includes a native wallet for the PLX cryptocurrency.
+
+Wallet functionality includes:
 
 - Sending PLX
 - Receiving PLX
-- Managing addresses
-- Viewing transaction history
-- Managing locally controlled wallet data
+- Receiving-address management
+- Sending-address management
+- Transaction history
+- Local wallet storage
+- Wallet encryption
+- Passphrase management
+- Wallet backup
+- Message signing
+- Message verification
 
-Users remain responsible for protecting their wallet files, passwords, backups, and operating systems.
-
-### Integrated Mining
-
-Parallax Core contains integrated Scrypt mining controls.
-
-Users can start and stop mining directly through the graphical interface without requiring a separate command-line mining application.
-
-External Scrypt mining software may also be used where compatible.
-
-### Network Tools
-
-Parallax Core includes tools for inspecting network and node activity, including:
-
-- Peer connections
-- Network traffic
-- Blockchain information
-- Node information
-- RPC console access
-- Diagnostic information
-
-These tools provide users with greater visibility into the operation of their own node.
+PLX is held and transferred directly on the Parallax blockchain.
 
 ---
 
-## 7. Wallet Security
+## 9. Integrated Mining Controls
 
-Parallax Core includes wallet security functionality intended to help users protect their PLX.
+Parallax Core contains integrated Scrypt mining functionality.
 
-Available functionality includes:
+Users can start or stop mining through the graphical desktop interface.
+
+The miner is therefore directly integrated into the official Parallax network application.
+
+Mining remains entirely optional.
+
+A user may operate Parallax Core as a wallet and full node without enabling mining.
+
+---
+
+## 10. Wallet Security
+
+Parallax Core includes security functionality intended to help users protect locally controlled PLX wallets.
+
+Security features include:
 
 - Wallet encryption
-- Passphrase protection
+- Wallet passphrase protection
 - Passphrase management
-- Wallet backups
-- Local key storage
+- Wallet backup functionality
+- Local wallet data
 - Message signing
 - Message verification
-- Address management
 
-Wallet security remains a shared responsibility between the software and the user.
+Users remain responsible for protecting their own devices, wallet files, backups and passphrases.
 
-Users should maintain secure backups and protect wallet passphrases.
+Private keys, wallet passphrases and wallet backup files should never be shared publicly.
 
 Loss of required wallet credentials or wallet data may result in loss of access to funds.
 
-Private keys, wallet passphrases, wallet backup files, RPC passwords, VPS credentials, and SSH credentials should never be shared publicly.
+---
+
+## 11. Network and Diagnostic Tools
+
+Parallax Core provides network information beyond ordinary wallet functionality.
+
+Available network and diagnostic tools include:
+
+- Connected peer information
+- Network traffic monitoring
+- Node information
+- Blockchain information
+- RPC console access
+- Network diagnostics
+
+These tools allow advanced users to inspect and interact with their own Parallax node directly.
 
 ---
 
-## 8. Native PLX Asset
+## 12. Native PLX Asset
 
-PLX is the native currency of the Parallax blockchain.
+PLX is the native asset of the Parallax blockchain.
 
-It does not depend on another blockchain for settlement.
+PLX does not require:
 
-PLX therefore has:
+- An ERC-20 contract
+- A BEP-20 contract
+- An Ethereum contract address
+- A third-party smart-contract platform
+- A wrapped token for native network transactions
 
-- No ERC-20 contract
-- No BEP-20 contract
-- No third-party token contract
-- No wrapped-token requirement for native network transfers
+Native PLX transactions are recorded directly on the Parallax blockchain.
 
-Transactions are recorded directly on the Parallax blockchain.
-
-The standard unit supports eight decimal places.
+PLX supports eight decimal places.
 
 ---
 
-## 9. Network Infrastructure
+## 13. Public Block Explorer
 
-Parallax uses peer-to-peer networking between full nodes.
+The official Parallax block explorer is:
 
-Current mainnet network ports are:
+https://explorer.parallaxcoin.xyz/
+
+The explorer provides public access to blockchain data including:
+
+- Block height
+- Blocks
+- Block hashes
+- Transactions
+- Addresses
+- Mined PLX supply
+- Network hashrate
+- Recent blockchain activity
+
+The explorer allows blockchain information to be independently checked without entering private wallet credentials.
+
+---
+
+## 14. Network Infrastructure
+
+Parallax uses peer-to-peer networking between blockchain nodes.
+
+Current mainnet ports are:
 
 - **P2P:** 19339
 - **RPC:** 19340
 
-The P2P port is used for communication between blockchain nodes.
+The P2P port is used by Parallax nodes to communicate with one another.
 
 RPC is intended for local or trusted administrative applications and should not normally be exposed openly to the public internet.
 
-Public blockchain information should instead be obtained through services such as the Parallax Explorer.
-
 ---
 
-## 10. Public Block Explorer
+## 15. Supply and Economic Model
 
-The official public explorer is:
+PLX enters circulation through Proof-of-Work mining.
+
+The current block subsidy is:
+
+**50 PLX**
+
+The live mined supply should be determined from blockchain data.
+
+The official Parallax explorer reports the current mined supply:
 
 https://explorer.parallaxcoin.xyz/
 
-The explorer provides an independently accessible view of the live Parallax blockchain.
+Parallax has published an intended long-term economic model based around a total economic allocation target of 1 billion PLX.
 
-It can be used to examine:
-
-- Current block height
-- Individual blocks
-- Transactions
-- Addresses
-- Mined supply
-- Network hashrate
-- Recent blockchain activity
-
-The explorer does not require users to provide private keys, passwords, or wallet credentials.
-
-The blockchain itself remains the authoritative record of PLX transactions and supply.
-
----
-
-## 11. Supply and Economic Model
-
-New PLX is produced through Proof-of-Work mining.
-
-The current block subsidy is 50 PLX.
-
-The live mined supply should be determined from the blockchain and can be independently verified through the Parallax Explorer.
-
-The project has published an intended long-term economic model based around a total economic allocation target of **1 billion PLX**.
-
-The intended allocation model is:
+The intended model is:
 
 | Category | Allocation | Long-Term Target |
 |---|---:|---:|
@@ -274,88 +313,96 @@ The intended allocation model is:
 
 These figures describe the intended long-term economic model.
 
-They should not currently be interpreted as a protocol-enforced hard maximum supply while the project's long-term emission implementation is being reviewed and aligned with active consensus rules.
+They should not currently be interpreted as a protocol-enforced hard maximum supply while long-term emission implementation is being reviewed and aligned with active consensus rules.
 
-No claim should therefore be made that the current software enforces a one-billion-PLX hard cap unless and until such a consensus rule is implemented and publicly verifiable.
-
-Current circulating and mined supply should always be determined from live blockchain data.
+The current mined supply should therefore be verified using live blockchain data.
 
 ---
 
-## 12. Development
+## 16. Open-Source Development
 
 Parallax is developed as an open-source project.
 
-Source code is publicly available at:
+Official source code is available at:
 
 https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner
 
-The repository contains project documentation and publicly available mainnet source code.
+The repository contains:
 
-Open-source development allows independent developers, exchanges, infrastructure providers, miners, and users to inspect the implementation used by the network.
+- Parallax documentation
+- Mainnet source code
+- Windows release information
+- Security documentation
+- Tokenomics documentation
+- Project whitepaper
+- Website files
 
-Changes affecting blockchain consensus require particular care because incompatible consensus changes can create separate blockchain histories.
+Open-source publication allows developers, exchanges, miners and users to inspect project software and documentation.
 
 ---
 
-## 13. Decentralized Participation
+## 17. Independent Network Participation
 
-The Parallax network is designed so that multiple independent participants can operate infrastructure.
+The Parallax network is designed to support independent participants.
 
-These participants may include:
+Participants may include:
 
 - Full-node operators
+- Wallet users
 - Solo miners
 - Mining pools
 - Exchanges
 - Block explorers
-- Wallet users
 - Developers
 - Infrastructure providers
 
-The existence of an official wallet, explorer, or other project-operated infrastructure does not prevent independent parties from creating their own compatible services.
-
-As participation develops, additional mining pools, nodes, exchanges, explorers, and services may operate independently of the Parallax Core Developers.
+The existence of official Parallax infrastructure does not prevent independent parties from creating compatible services.
 
 ---
 
-## 14. Exchange and Market Integration
+## 18. Exchange Integration
 
-PLX is designed as a native transferable cryptocurrency and may be integrated by cryptocurrency exchanges that support the Parallax blockchain.
+PLX is a native cryptocurrency and may be integrated by cryptocurrency exchanges that support the Parallax blockchain.
 
-Exchange integration requires operation of compatible Parallax node infrastructure and generation of native PLX deposit and withdrawal addresses.
+Exchange integration requires compatible Parallax node infrastructure.
 
-A market price is not defined by the Parallax protocol.
+Deposits and withdrawals use native PLX blockchain addresses.
 
-Where PLX is traded on exchanges, its market price is determined by actual orders and transactions between market participants.
+The Parallax protocol itself does not define a fiat or stablecoin market price.
 
-The blockchain itself records transfers of PLX but does not establish a fiat or stablecoin exchange value.
+Where PLX trades on exchanges, the market price is determined by actual market activity between buyers and sellers.
 
 ---
 
-## 15. Transparency
+## 19. Transparency
 
-Parallax provides several publicly accessible resources intended to allow independent verification of the project and network.
+Parallax provides public resources for independent verification.
 
-Official resources include:
+### Official Website
 
-**Website**  
 https://parallaxcoin.xyz/
 
-**Block Explorer**  
+### Official Explorer
+
 https://explorer.parallaxcoin.xyz/
 
-**Source Code**  
+### Official GitHub
+
 https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner
 
-**Mainnet Genesis Block**  
+### Mainnet Genesis Block
+
 `72b26135d67f262b8f9c33277c4be8499482d3cba475bc36291f6729dea08ae5`
 
-Blockchain activity, supply, transactions, and mining activity should be verified using live network data rather than relying solely on project statements.
+### Genesis Transaction
+
+`f350acf4761d6947161447bde2720fa39e77fb11509ccd7314a0701253e157da`
+
+Blockchain activity, mined supply and transactions should be verified using live network data.
 
 ---
 
-## 16. Project Identity
+## 20. Project Identity
 
 The current Parallax project launched in 2026.
 
@@ -363,47 +410,55 @@ Its official identity is:
 
 **Parallax (PLX)**
 
-Official website:
+The current Parallax blockchain is not affiliated with earlier cryptocurrency projects or historical assets that may previously have used the name ParallaxCoin or the ticker PLX.
 
-https://parallaxcoin.xyz/
+The current project can be distinguished by:
 
-The current Parallax blockchain is not affiliated with earlier cryptocurrency projects or historical assets that may previously have used the name **ParallaxCoin** or the ticker **PLX**.
-
-The current project can be distinguished through its official website, public GitHub repository, independent Genesis Block 0, public block explorer, and active Parallax blockchain.
+- Official website at parallaxcoin.xyz
+- Independent Parallax Genesis Block 0
+- Official Parallax Core Developers GitHub repository
+- Live Parallax blockchain
+- Public Parallax block explorer
+- Parallax Core Windows full-node software
 
 ---
 
-## 17. Security Considerations
+## 21. Security Considerations
 
-Cryptocurrency software involves operational and financial risks.
+Cryptocurrency software involves operational and financial risk.
 
 Users should:
 
-- Download software only from official project sources.
-- Verify release checksums when available.
+- Download Parallax Core only from official project sources.
+- Verify checksums where available.
 - Encrypt wallets containing funds.
-- Maintain offline backups.
+- Maintain secure backups.
 - Protect wallet passphrases.
 - Never disclose private keys.
-- Never expose RPC credentials publicly.
-- Keep operating systems and security software maintained.
-- Independently verify addresses before sending transactions.
-
-Mining, cryptocurrency ownership, and exchange trading may involve financial risk.
+- Never disclose RPC credentials.
+- Never expose RPC services publicly without a specific security requirement.
+- Keep operating systems maintained.
+- Verify receiving addresses before sending funds.
 
 Parallax does not guarantee the future market value of PLX.
 
 ---
 
-## 18. Conclusion
+## 22. Conclusion
 
-Parallax is an independent Scrypt Proof-of-Work blockchain with PLX as its native currency.
+Parallax is an independent Layer 1 Scrypt Proof-of-Work blockchain with PLX as its native cryptocurrency.
 
-The project combines a public blockchain, open-source full-node software, native wallet, integrated mining capability, wallet security features, network tools, and a public block explorer.
+The Parallax network maintains its own Genesis Block, blockchain history, peer-to-peer network and Proof-of-Work consensus.
 
-Its blockchain begins from its own Genesis Block 0 and operates independently of token platforms such as Ethereum or BNB Chain.
+Parallax Core is the official Windows full-node software for the network.
 
-Parallax is intended to provide a transparent and independently verifiable cryptocurrency network in which users can operate nodes, hold their own wallet keys, participate in mining, inspect blockchain data, and develop compatible infrastructure.
+It combines:
+
+**Full Node. Wallet. Miner. Security. Network Tools. One application.**
+
+Parallax Core allows users to independently validate the blockchain, send and receive PLX, encrypt and back up wallets, sign and verify messages, inspect peers, monitor network traffic, access blockchain information, use RPC tools and optionally participate in Scrypt mining through integrated graphical controls.
+
+The project is designed around publicly verifiable blockchain data, open-source development and direct user participation in the Parallax network.
 
 ---
 
@@ -412,6 +467,9 @@ Parallax is intended to provide a transparent and independently verifiable crypt
 **Website:** https://parallaxcoin.xyz/  
 **Explorer:** https://explorer.parallaxcoin.xyz/  
 **GitHub:** https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner  
+**Whitepaper:** https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/blob/main/WHITEPAPER.md  
 **Ticker:** PLX  
+**Blockchain:** Parallax Layer 1  
 **Consensus:** Scrypt Proof of Work  
 **Current Block Subsidy:** 50 PLX  
+**Official Client:** Parallax Core  
