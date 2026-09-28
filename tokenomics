@@ -10,7 +10,7 @@ The current mined PLX supply is determined directly from the live Parallax block
 
 Official block explorer:
 
-https://explorer.parallaxcoin.xyz/
+https://explorer.paraplx.com/
 
 The live blockchain should be treated as the authoritative source for the amount of PLX currently mined and recorded on-chain.
 
@@ -60,7 +60,7 @@ The current on-chain PLX supply is created through active blockchain mining.
 
 It can be verified at any time through:
 
-https://explorer.parallaxcoin.xyz/
+https://explorer.paraplx.com/
 
 This means the amount of PLX presently existing on-chain can be checked independently rather than relying on a manually published supply figure.
 
@@ -120,7 +120,7 @@ Parallax publishes a public blockchain explorer so users, miners, exchanges and 
 
 Explorer:
 
-https://explorer.parallaxcoin.xyz/
+https://explorer.paraplx.com/
 
 ## Supply Policy Status
 
@@ -148,11 +148,11 @@ PLX is not a smart-contract token.
 
 Official website:
 
-https://parallaxcoin.xyz/
+https://paraplx.com/
 
 Official block explorer:
 
-https://explorer.parallaxcoin.xyz/
+https://explorer.paraplx.com/
 
 Official GitHub:
 
