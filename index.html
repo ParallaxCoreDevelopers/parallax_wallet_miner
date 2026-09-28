@@ -11,20 +11,20 @@
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="author" content="Parallax Core Developers">
 
-    <link rel="canonical" href="https://parallaxcoin.xyz/">
+    <link rel="canonical" href="https://www.paraplx.com">
     <link rel="icon" type="image/png" href="logo.png">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Parallax (PLX) | Scrypt Proof-of-Work Cryptocurrency">
-    <meta property="og:description" content="Independent Layer 1 Scrypt Proof-of-Work blockchain with Parallax Core full node, native wallet, integrated mining, security tools and live blockchain explorer.">
-    <meta property="og:url" content="https://parallaxcoin.xyz/">
-    <meta property="og:image" content="https://parallaxcoin.xyz/logo.png">
+    <meta property="og: description" content=" Independent Layer 1 Scrypt Proof-of-Work blockchain with Parallax Core full node, native wallet, integrated mining, security tools and live blockchain explorer.">
+    <meta property="og:url" content="https://www.paraplx.com">
+    <meta property="og:image" content="https://www.paraplx.com/logo.png">
     <meta property="og:site_name" content="Parallax (PLX)">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Parallax (PLX) Cryptocurrency">
-    <meta name="twitter:description" content="Independent Scrypt Proof-of-Work Layer 1 blockchain with a Windows full-node wallet, integrated miner, security features and public blockchain explorer.">
-    <meta name="twitter:image" content="https://parallaxcoin.xyz/logo.png">
+    <meta name=" twitter: description" content=" Independent Scrypt Proof-of-Work Layer 1 blockchain with a Windows full-node wallet, integrated miner, security features and public blockchain explorer.">
+    <meta name="twitter:image" content="https://www.paraplx.com/logo.png">
 
     <script type="application/ld+json">
     {
@@ -38,7 +38,7 @@
                     "Parallax Cryptocurrency",
                     "PLX Cryptocurrency"
                 ],
-                "url": "https://parallaxcoin.xyz/",
+                "url": "https://www.paraplx.com",
                 "description": "Official website for Parallax (PLX), an independent Layer 1 Scrypt Proof-of-Work cryptocurrency blockchain."
             },
             {
@@ -47,7 +47,7 @@
                 "applicationCategory": "FinanceApplication",
                 "operatingSystem": "Windows",
                 "description": "Official Parallax full-node desktop client combining a native PLX wallet, Scrypt mining controls, wallet security, peer management, network traffic information and RPC tools.",
-                "url": "https://parallaxcoin.xyz/",
+                "url": "https://www.paraplx.com",
                 "downloadUrl": "https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/releases/download/v0.1.4/Parallax_Wallet_Miner_Mainnet.exe"
             }
         ]
@@ -400,7 +400,7 @@
                 Download Parallax Core
             </a>
 
-            <a class="button" href="https://explorer.parallaxcoin.xyz/" target="_blank" rel="noopener noreferrer">
+            <a class="button" href="https://www.paraplx.com/" target="_blank" rel="noopener noreferrer">
                 Live Block Explorer
             </a>
 
@@ -495,7 +495,7 @@
                 <article class="card">
                     <h3>Native PLX Wallet</h3>
                     <p>
-                        Provides sending, receiving, address management, transaction history and
+                        Provides sending, receiving, address management, transaction history, and
                         locally controlled wallet functionality for native PLX.
                     </p>
                 </article>
@@ -652,7 +652,7 @@
             </p>
 
             <div class="button-row">
-                <a class="button" href="https://explorer.parallaxcoin.xyz/" target="_blank" rel="noopener noreferrer">
+                <a class="button" href="https://www.paraplx.com" target="_blank" rel="noopener noreferrer">
                     Open Official Parallax Explorer
                 </a>
             </div>
@@ -728,7 +728,7 @@
                     Whitepaper
                 </a>
 
-                <a class="resource" href="https://explorer.parallaxcoin.xyz/" target="_blank" rel="noopener noreferrer">
+                <a class="resource" href="https://explorer.paraplx.com" target="_blank" rel="noopener noreferrer">
                     Live Block Explorer
                 </a>
 
@@ -775,10 +775,10 @@
 
         <p>
             Official website:
-            <a href="https://parallaxcoin.xyz/">parallaxcoin.xyz</a>
+            <a href="https://explorer.paraplx.com/">paraplx.com</a>
             &nbsp;|&nbsp;
             Explorer:
-            <a href="https://explorer.parallaxcoin.xyz/">explorer.parallaxcoin.xyz</a>
+            <a href="https://explorer.paraplx.com/">explorer.paraplx.com</a>
         </p>
     </footer>
 
@@ -787,7 +787,7 @@
 <script>
 async function loadNetworkStatus() {
     try {
-        const response = await fetch("https://explorer.parallaxcoin.xyz/network-status.json", {
+        const response = await fetch("https://explorer.https://paraplx.com/network-status.json", {
             cache: "no-store"
         });
 
@@ -808,13 +808,13 @@ async function loadNetworkStatus() {
                 maximumFractionDigits: 3
             }) + " KH/s";
 
-        document.getElementById("network-miners").textContent =
-            "~" + Number(data.estimated_active_mining_workers);
+    document.getElementById("network-miners").textContent =
+    Number(data.unique_connected_ips).toLocaleString();
     } catch (error) {
         document.getElementById("network-height").textContent = "View Explorer";
         document.getElementById("network-supply").textContent = "View Explorer";
         document.getElementById("network-hashrate").textContent = "View Explorer";
-        document.getElementById("network-miners").textContent = "Estimate unavailable";
+        document.getElementById("network-miners").textContent = "—";
     }
 }
 
