@@ -194,7 +194,7 @@ Only download Parallax Core from official Parallax project sources.
 
 The official public block explorer is:
 
-https://explorer.parallaxcoin.xyz/
+https://explorer.paraplx.com/
 
 The explorer provides independent public access to Parallax blockchain data including:
 
@@ -242,7 +242,7 @@ Mainnet P2P port:
 
 The current mined PLX supply can be independently verified from the live blockchain:
 
-https://explorer.parallaxcoin.xyz/
+https://explorer.paraplx.com/
 
 The public explorer derives current blockchain supply information from the Parallax Mainnet node.
 
@@ -297,11 +297,11 @@ or:
 
 Official website:
 
-`parallaxcoin.xyz`
+`paraplx.com`
 
 Official block explorer:
 
-`explorer.parallaxcoin.xyz`
+`explorer.paraplx.com`
 
 Official GitHub organisation:
 
