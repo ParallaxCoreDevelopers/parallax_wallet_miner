@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parallax Sponsorship | Support Parallax (PLX)</title>
+
+    <meta name="description" content="Support ongoing Parallax (PLX) development, infrastructure, block explorer hosting, software releases, security work, code signing, documentation and community services.">
+
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Parallax Core Developers">
+
+    <link rel="canonical" href="https://paraplx.com/sponsorship.html">
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Parallax Sponsorship | Support Parallax (PLX)">
+    <meta property="og:description" content="Support ongoing Parallax development, infrastructure, explorer hosting, software releases, security work and community services.">
+    <meta property="og:url" content="https://paraplx.com/sponsorship.html">
+    <meta property="og:image" content="https://paraplx.com/logo.png">
+    <meta property="og:site_name" content="Parallax (PLX)">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Parallax Sponsorship">
+    <meta name="twitter:description" content="Support ongoing development and infrastructure for the Parallax (PLX) blockchain and Parallax Core.">
+    <meta name="twitter:image" content="https://paraplx.com/logo.png">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Parallax Sponsorship",
+        "url": "https://paraplx.com/sponsorship.html",
+        "description": "Official sponsorship information for the Parallax (PLX) blockchain and Parallax Core."
+    }
+    </script>
+
+    <style>
+        :root {
+            --background: #03160f;
+            --background-secondary: #052219;
+            --card: #08291d;
+            --card-secondary: #061f16;
+            --border: #174733;
+            --accent: #39b765;
+            --accent-soft: #8ed5aa;
+            --text: #d5e4dc;
+            --text-muted: #9cb9a9;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, var(--background) 0%, var(--background-secondary) 100%);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        a {
+            color: var(--accent-soft);
+        }
+
+        .site-shell {
+            width: min(1180px, calc(100% - 32px));
+            margin: 0 auto;
+        }
+
+        .brand {
+            padding: 2rem 1rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .brand img {
+            width: 82px;
+            height: auto;
+            display: block;
+            margin: 0 auto 0.7rem;
+        }
+
+        .brand-name {
+            color: var(--white);
+            font-size: 0.95rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            padding: 1rem 0 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            background: var(--card-secondary);
+            border: 1px solid var(--border);
+            padding: 0.55rem 0.9rem;
+            border-radius: 6px;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            border-color: var(--accent);
+            color: var(--white);
+        }
+
+        header {
+            padding: 4.5rem 1.5rem;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        header h1 {
+            color: var(--white);
+            font-size: clamp(2.3rem, 5vw, 4rem);
+            line-height: 1.12;
+            margin: 0 auto 1.2rem;
+            max-width: 1000px;
+        }
+
+        .lead {
+            max-width: 900px;
+            margin: 0 auto;
+            color: var(--text-muted);
+            font-size: 1.15rem;
+        }
+
+        section {
+            padding: 4.5rem 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section-title {
+            color: var(--white);
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            line-height: 1.2;
+            margin: 0 auto 1rem;
+        }
+
+        .section-copy {
+            max-width: 900px;
+            margin: 0 auto 2rem;
+            color: var(--text-muted);
+            font-size: 1.02rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.3rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            padding: 1.6rem;
+        }
+
+        .card h3 {
+            color: var(--white);
+            margin: 0 0 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 0.85rem 1.3rem;
+            border-radius: 7px;
+            border: 1px solid var(--border);
+            background: #0c3828;
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .button:hover {
+            border-color: var(--accent);
+            background: #125139;
+        }
+
+        .sponsor-area {
+            max-width: 950px;
+            margin: 2rem auto 0;
+            background: var(--card-secondary);
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            padding: 2rem;
+        }
+
+        .sponsor-area p {
+            color: var(--text-muted);
+            margin: 0.5rem auto;
+            max-width: 800px;
+        }
+
+        .small-note {
+            max-width: 850px;
+            margin: 1.5rem auto 0;
+            color: #78998a;
+            font-size: 0.86rem;
+        }
+
+        footer {
+            padding: 3rem 1rem;
+            color: #729486;
+            font-size: 0.88rem;
+        }
+
+        footer p {
+            max-width: 900px;
+            margin: 0.6rem auto;
+        }
+
+        @media (max-width: 700px) {
+            .site-shell {
+                width: min(100% - 20px, 1180px);
+            }
+
+            header {
+                padding: 3rem 0.8rem;
+            }
+
+            section {
+                padding: 3rem 0.6rem;
+            }
+
+            .button {
+                width: 100%;
+                max-width: 340px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="site-shell">
+
+    <div class="brand">
+        <img src="logo.png" alt="Parallax PLX cryptocurrency logo">
+        <div class="brand-name">Parallax PLX</div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#support">Support</a>
+        <a href="#corporate">Corporate Sponsorship</a>
+        <a href="#sponsors">Sponsors</a>
+    </nav>
+
+    <header>
+        <h1>Support Parallax Development</h1>
+        <p class="lead">
+            Parallax is an independent open-source cryptocurrency, blockchain network and software ecosystem.
+            Sponsorship helps support the infrastructure, development and services that keep Parallax available
+            to users, miners, developers and the wider community.
+        </p>
+    </header>
+
+    <main>
+
+        <section id="support">
+            <h2 class="section-title">What Sponsorship Helps Support</h2>
+
+            <p class="section-copy">
+                Sponsorship contributions can help cover the ongoing costs associated with maintaining and
+                improving the Parallax ecosystem.
+            </p>
+
+            <div class="grid">
+                <article class="card">
+                    <h3>Parallax Core</h3>
+                    <p>Development, testing, maintenance and future releases of the official Windows full-node wallet and miner.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Network Infrastructure</h3>
+                    <p>VPS hosting, public node services and other infrastructure used to support the Parallax network.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Block Explorer</h3>
+                    <p>Hosting and maintenance of the public Parallax blockchain explorer and network-status services.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Security & Code Signing</h3>
+                    <p>Software signing, security tooling and related services that help improve release trust and distribution.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Website & Documentation</h3>
+                    <p>Official website hosting, technical documentation, public resources and developer information.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Community Services</h3>
+                    <p>Community infrastructure, support resources and services used to help people participate in Parallax.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="corporate">
+            <h2 class="section-title">Corporate Sponsorship</h2>
+
+            <p class="section-copy">
+                Companies and organisations can support Parallax through a professional sponsorship arrangement.
+                Sponsor recognition may include the organisation's name, logo, a short description and a link to
+                its official website on this page.
+            </p>
+
+            <p class="section-copy">
+                Sponsor links are identified as sponsored links. Sponsorship is intended to provide transparent
+                recognition and brand visibility for organisations that support Parallax, not to sell search-engine
+                ranking or influence.
+            </p>
+
+            <p class="section-copy">
+                Sponsorship does not provide control over Parallax consensus rules, blockchain operation,
+                development decisions or the independent operation of the network.
+            </p>
+
+            <div class="button-row">
+                <a class="button" href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/discussions" target="_blank" rel="noopener noreferrer">
+                    Contact Parallax Core Developers
+                </a>
+            </div>
+        </section>
+
+        <section id="sponsors">
+            <h2 class="section-title">Our Sponsors</h2>
+
+            <div class="sponsor-area">
+                <p>No corporate sponsors are currently listed.</p>
+                <p>
+                    Organisations interested in supporting Parallax can contact the Parallax Core Developers
+                    to discuss sponsorship and recognition options.
+                </p>
+            </div>
+
+            <p class="small-note">
+                Future sponsor website links will be marked with the appropriate sponsored relationship attribute.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Parallax Core Developers. Parallax is an independent open-source Scrypt Proof-of-Work blockchain.</p>
+        <p><a href="https://paraplx.com/">paraplx.com</a></p>
+    </footer>
+
+</div>
+
+</body>
+</html>
