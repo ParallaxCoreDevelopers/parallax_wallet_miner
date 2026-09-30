@@ -11,7 +11,7 @@ The official desktop application, **Parallax Core**, is much more than a cryptoc
 ## Official Parallax Links
 
 - Website: www.paraplx.com
-- Block Explorer: https://explorer.parallaxcoin.xyz/
+- Block Explorer: https://explorer.paraplx.com/
 - GitHub: https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner
 - Releases: https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/releases
 
