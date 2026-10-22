@@ -105,7 +105,7 @@ Available wallet-security functions include:
 - Full-node blockchain validation
 - Peer and network inspection tools
 
-Wallet encryption helps protect locally stored private-key material if the wallet file or computer is accessed without authorization.
+Wallet encryption helps protect locally stored private-key material if the wallet file or computer is accessed without authorisation.
 
 Users remain responsible for protecting their passphrase, wallet backups, operating system and computer.
 
@@ -213,24 +213,6 @@ The explorer allows miners, users, developers, researchers and exchange operator
 ## Mainnet Source Code
 
 The source code corresponding to the current Parallax Mainnet release is publicly available in:
-
-`mainnet-source/`
-
-Browse the Mainnet source:
-
-https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/tree/main/mainnet-source
-
-The release also includes a downloadable Mainnet source archive:
-
-`Parallax_Wallet_Miner_Mainnet_Source_Code.zip`
-
-## Testnet
-
-Historical Parallax testnet source remains available separately for development and reference.
-
-Testnet source archive:
-
-`Parallax_Wallet_Miner_Testnet_Source_Code.zip`
 
 Mainnet and testnet are separate networks.
 
