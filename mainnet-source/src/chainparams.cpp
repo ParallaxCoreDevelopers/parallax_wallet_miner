@@ -77,8 +77,8 @@ public:
         consensus.MinBIP9WarningHeight = 8064; // segwit activation height + miner confirmation window
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         // Parallax forks from Parallax at block 50,000. The fork is enforced when the full block is validated.
-        consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
-        consensus.nPowTargetSpacing = 2.5 * 60;
+        consensus.nPowTargetTimespan = 2016 * 4 * 60; // 5.6 days, 2016 blocks
+        consensus.nPowTargetSpacing = 4 * 60; // 4 minutes
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% of 8064
@@ -105,10 +105,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x72;
-        pchMessageStart[1] = 0xB2;
-        pchMessageStart[2] = 0x61;
-        pchMessageStart[3] = 0x35;
+        pchMessageStart[0] = 0x50;
+        pchMessageStart[1] = 0x41;
+        pchMessageStart[2] = 0x52;
+        pchMessageStart[3] = 0x41;
         nDefaultPort = 19339;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 0;
@@ -147,6 +147,7 @@ public:
         checkpointData = {
             {
                 {0, uint256S("0x72b26135d67f262b8f9c33277c4be8499482d3cba475bc36291f6729dea08ae5")},
+            {319, uint256S("0xd22a5d33c500b57fc1cf6981b6a99e265726654ee297d72234797fdb69357af1")},
             }
         };
 
@@ -239,6 +240,7 @@ public:
         checkpointData = {
             {
                 {0, uint256S("0x72b26135d67f262b8f9c33277c4be8499482d3cba475bc36291f6729dea08ae5")},
+                {32652, uint256S("0x2a78ce7b5b26de5446c08359bb3269cc03a5b853fdd5110a7d05b7ccf1b5617f")},
             }
         };
 
