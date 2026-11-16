@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parallax (PLX) Whitepaper | Independent Layer 1 Blockchain</title>
+<meta name="description" content="Official Parallax (PLX) whitepaper covering its independent Layer 1 blockchain, Scrypt Proof-of-Work, native PLX, mining, Parallax Core, network security and tokenomics.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://paraplx.com/whitepaper.html">
+<link rel="icon" href="/logo.png" type="image/png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Parallax (PLX) Whitepaper">
+<meta property="og:description" content="Technical and economic overview of the independent Parallax Layer 1 blockchain.">
+<meta property="og:url" content="https://paraplx.com/whitepaper.html">
+<meta property="og:image" content="https://paraplx.com/logo.png">
+<meta property="og:site_name" content="Parallax (PLX)">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Parallax (PLX) Whitepaper">
+<meta name="twitter:description" content="Technical and economic overview of the independent Parallax Layer 1 blockchain.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Parallax (PLX) Whitepaper",
+  "description": "Technical and economic overview of the independent Parallax Layer 1 blockchain.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://paraplx.com/whitepaper.html"
+  },
+  "author": {"@type": "Organization", "name": "Parallax Core Developers"},
+  "publisher": {
+    "@type": "Organization",
+    "name": "Parallax Core Developers",
+    "url": "https://paraplx.com/"
+  },
+  "inLanguage": "en"
+}
+</script>
+<style>
+:root{color-scheme:dark;--bg:#07130e;--panel:#0d2118;--panel2:#10291e;--line:#234735;--green:#55ce88;--text:#e0eee6;--muted:#a9c0b2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{width:min(100% - 32px,1000px);margin:auto}
+header{padding:30px 0 24px;text-align:center;border-bottom:1px solid var(--line)}
+header img{width:68px;height:auto}.brand{font-weight:800;letter-spacing:2px;color:#fff;margin-top:8px}
+nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding:18px 0}
+nav a{display:inline-block;padding:8px 14px;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--text);font-weight:650}
+nav a[aria-current=page]{border-color:var(--green);color:var(--green)}
+main{padding:20px 0 60px}h1,h2,h3{color:#fff;line-height:1.25}
+h1{font-size:clamp(2rem,5vw,3.2rem);text-align:center;margin:20px 0 8px}
+.subtitle{text-align:center;color:var(--muted);font-size:1.08rem;margin:0 auto 28px}
+.intro,.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;margin:22px 0}
+.specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.spec{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:12px}
+.spec strong{display:block;color:var(--muted);font-size:.85rem}.spec span{display:block;color:#fff;font-weight:700;overflow-wrap:anywhere}
+h2{font-size:1.65rem;margin:34px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+h3{font-size:1.15rem;margin:22px 0 8px}p,li{color:var(--text)}.muted{color:var(--muted)}
+ul,ol{padding-left:24px}li{margin:6px 0}
+.hash{display:block;background:#041009;border:1px solid var(--line);border-radius:7px;padding:12px;color:var(--green);margin:8px 0;overflow-wrap:anywhere;font-family:ui-monospace,Consolas,monospace}
+table{width:100%;border-collapse:collapse;margin:16px 0;background:var(--panel)}
+th,td{text-align:left;padding:11px;border:1px solid var(--line);vertical-align:top}th{color:#fff;background:var(--panel2)}
+.notice{border-left:3px solid var(--green);padding:12px 16px;background:var(--panel2);margin:16px 0}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;text-align:center;color:var(--muted);font-size:.9rem}
+@media(max-width:600px){.wrap{width:min(100% - 22px,1000px)}.intro,.panel{padding:16px}table{font-size:.9rem}th,td{padding:8px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a href="/" aria-label="Parallax home"><img src="/logo.png" alt="Parallax PLX logo"></a>
+<div class="brand">PARALLAX PLX</div>
+</header>
+<nav aria-label="Main navigation">
+<a href="/">Home</a><a href="/faq.html">FAQ</a><a href="/network-update.html">Network Update</a>
+<a href="/whitepaper.html" aria-current="page">Whitepaper</a>
+<a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner">Source Code</a>
+</nav>
+<main>
+<h1>Parallax (PLX) Whitepaper</h1>
+<p class="subtitle">Independent Layer 1 Scrypt Proof-of-Work Blockchain</p>
+<div class="intro">
+<p><strong>Abstract.</strong> Parallax (PLX) is an independent, open-source Layer 1 blockchain with its own genesis block, peer-to-peer network, consensus rules, transaction history and native cryptocurrency. The network currently uses Scrypt Proof-of-Work. Parallax Core is the official Windows full-node application combining blockchain validation, a native PLX wallet, integrated mining controls and network tools.</p>
+<p>This document describes the project's currently documented network design and economic model. Planned features and economic targets that are not enforced by mainnet consensus are identified as plans, not live protocol rules.</p>
+</div>
+
+<h2>1. Project Overview</h2>
+<p>Parallax is a base-layer blockchain, not a token deployed through a smart contract on another network. PLX is the native asset recorded directly in the Parallax blockchain. The network maintains its own block history, transaction validation, peer-to-peer communication and consensus process.</p>
+<p>The project aims to provide a publicly verifiable Proof-of-Work network and desktop software that lets users operate a node, hold and transact in native PLX, and optionally contribute mining work through one application.</p>
+
+<h2>2. Mainnet Identity and Network Parameters</h2>
+<div class="specs">
+<div class="spec"><strong>Project</strong><span>Parallax</span></div>
+<div class="spec"><strong>Native asset / ticker</strong><span>PLX</span></div>
+<div class="spec"><strong>Blockchain type</strong><span>Independent Layer 1</span></div>
+<div class="spec"><strong>Consensus</strong><span>Scrypt Proof-of-Work</span></div>
+<div class="spec"><strong>Genesis height</strong><span>0</span></div>
+<div class="spec"><strong>Current block subsidy</strong><span>50 PLX</span></div>
+<div class="spec"><strong>Target block interval</strong><span>4 minutes</span></div>
+<div class="spec"><strong>Difficulty adjustment interval</strong><span>2,016 blocks</span></div>
+<div class="spec"><strong>Mainnet P2P port</strong><span>19339</span></div>
+<div class="spec"><strong>Mainnet RPC port</strong><span>19340 (localhost / trusted access)</span></div>
+<div class="spec"><strong>Current public desktop release</strong><span>Parallax Core v0.1.4</span></div>
+<div class="spec"><strong>Supported desktop platform</strong><span>Windows</span></div>
+</div>
+<h3>Mainnet genesis block</h3>
+<p>Parallax begins at its own genesis block at height zero. The published mainnet genesis hash is:</p>
+<span class="hash">72b26135d67f262b8f9c33277c4be8499482d3cba475bc36291f6729dea08ae5</span>
+<p class="muted">Use the live blockchain and official explorer to verify current block height, transactions, mined supply and network activity.</p>
+
+<h2>3. Consensus and Mining</h2>
+<p>Parallax currently uses Scrypt Proof-of-Work. Miners perform computational work to propose valid blocks. Nodes independently validate blocks and transactions against the network's consensus rules before accepting them into their local chain.</p>
+<p>The documented mainnet target block interval is four minutes. Difficulty retargeting is configured around a 2,016-block adjustment interval and a 5.6-day target timespan. These parameters govern the intended rate of block production and periodic adjustment of mining difficulty.</p>
+<p>The current block subsidy is 50 PLX per accepted block. Mining distributes newly created PLX under the active consensus rules and contributes Proof-of-Work to the chain. Coinbase rewards require one additional block before becoming mature, as documented in the project README.</p>
+<div class="notice"><strong>Mining hardware and future work:</strong> Scrypt is the current mainnet algorithm. Specialised Scrypt hardware can have a substantial hashrate advantage over ordinary CPUs and GPUs. The project has publicly stated that it is evaluating possible future Proof-of-Work changes intended to improve general-purpose CPU/GPU participation. No replacement algorithm or activation height is announced here; any consensus change must be tested, documented and announced before activation.</div>
+<p>Mining participation is permissionless at the protocol level, subject to the network's software, hardware and consensus requirements. The project does not promise fixed mining income or a guaranteed probability of finding blocks.</p>
+
+<h2>4. Parallax Core: Full Node, Wallet and Miner</h2>
+<p>Parallax Core is the official Windows desktop software for participating directly in the Parallax network. It is more than a standalone wallet interface: when synchronised, it operates as a full node and validates blockchain data locally.</p>
+<h3>Full-node functions</h3>
+<ul><li>Synchronises and maintains local blockchain data.</li><li>Validates blocks and transactions according to the software's consensus rules.</li><li>Connects to peers on the Parallax peer-to-peer network.</li><li>Displays peer connections, network traffic and node information.</li><li>Provides an integrated console for advanced functions.</li></ul>
+<h3>Native wallet functions</h3>
+<ul><li>Creates and manages PLX receiving addresses.</li><li>Sends and receives native PLX.</li><li>Displays balances and transaction history.</li><li>Supports wallet backup, message signing and message verification.</li><li>Keeps wallet private-key management under the user's local control.</li></ul>
+<h3>Integrated mining</h3>
+<p>The desktop interface includes Start Mining and Stop Mining controls for the integrated Scrypt mining function. Users can choose whether to mine while operating the wallet and node.</p>
+
+<h2>5. Wallet Security and User Responsibilities</h2>
+<p>Parallax Core includes wallet encryption, passphrase management, wallet backup, message signing and verification. Wallet encryption helps protect locally stored wallet information if the wallet file or computer is accessed without authorisation.</p>
+<p>Encryption does not remove the user's responsibility to secure their computer, passphrase and backups. A lost passphrase may permanently prevent access to an encrypted wallet. Backups should be stored securely and separately from the computer running the wallet.</p>
+<ul><li>Download software only from official Parallax project sources.</li><li>Verify the published SHA256 checksum before running the executable.</li><li>Use a strong, unique wallet passphrase.</li><li>Keep encrypted wallet backups in secure separate storage.</li><li>Never disclose private keys or wallet passphrases.</li><li>Keep RPC access restricted to localhost or trusted systems; do not expose RPC credentials publicly.</li><li>Check recipient addresses carefully before sending PLX.</li></ul>
+<p>No Proof-of-Work blockchain or desktop application can guarantee protection against every possible software, infrastructure, endpoint or majority-hashpower attack. Users should review current security notices and use the current supported release.</p>
+
+<h2>6. Network Security and Validation</h2>
+<p>Parallax Core's full-node design allows a synchronised client to process and validate blockchain data locally rather than relying solely on a third-party wallet service. Peer-to-peer networking distributes blocks and transactions between participating nodes.</p>
+<p>The project's published security update describes work on full-period difficulty-retarget protection, checkpoint protection for established chain history, accumulated-chainwork validation and fork detection. These mechanisms are intended to make specific forms of timestamp and difficulty manipulation more difficult and to protect established chain history. They do not make the network immune to every possible attack.</p>
+<p>Mainnet uses P2P port 19339. RPC uses port 19340 and should normally remain restricted to localhost or trusted systems.</p>
+
+<h2>7. PLX Supply and Tokenomics</h2>
+<p>PLX is issued through Proof-of-Work mining. The live mined supply is determined by the blockchain and can be independently inspected through the official block explorer. The explorer, rather than a manually maintained website figure, is the authoritative public reference for current on-chain supply.</p>
+<p>The project's published long-term economic model uses a planning target of one billion PLX, with the following intended allocation:</p>
+<table><thead><tr><th>Intended allocation</th><th>Share</th><th>Long-term planning amount</th></tr></thead>
+<tbody><tr><td>Public mining</td><td>40%</td><td>400,000,000 PLX</td></tr><tr><td>Development</td><td>30%</td><td>300,000,000 PLX</td></tr><tr><td>Liquidity / exchange trading</td><td>20%</td><td>200,000,000 PLX</td></tr><tr><td>Community rewards</td><td>10%</td><td>100,000,000 PLX</td></tr></tbody></table>
+<div class="notice"><strong>Important distinction:</strong> The one-billion-PLX figure and allocation table describe the project's intended long-term economic model. They are not a statement that these amounts have been minted, pre-allocated or implemented as an enforced on-chain hard cap. The project's tokenomics documentation says the detailed long-term emission and allocation implementation remains under review against active mainnet consensus rules.</div>
+<p>PLX is a native blockchain asset. It is not currently an ERC-20 or BEP-20 token and does not have a smart-contract token address on those networks.</p>
+
+<h2>8. Open-Source Development</h2>
+<p>Parallax Core is published as open-source software under the MIT License. The public repository provides source code, release information, project documentation and security guidance. The current published Windows mainnet release is Parallax Core Full-Node Wallet &amp; Miner v0.1.4.</p>
+<p>Users should compare downloaded software against the published release information and checksum.</p>
+
+<h2>9. Roadmap and Future Development</h2>
+<p>Publicly documented areas of ongoing work include improving mining accessibility, maintaining network security, strengthening wallet and node usability, and evaluating broader PLX wallet and trading compatibility.</p>
+<p>The project has discussed a possible future representation of PLX on an established network to support wider wallet compatibility and potential trading integrations. No token contract address, bridge mechanism or trading pair is announced here. Such details should only be relied upon when published with implementation and verification information by the project.</p>
+<p>Any future consensus change must be tested and publicly documented before activation. This whitepaper describes the currently documented network and distinguishes it from proposals that remain under evaluation.</p>
+
+<h2>10. Public Verification and Official Resources</h2>
+<div class="panel">
+<p><strong>Official website:</strong> <a href="https://paraplx.com/">paraplx.com</a></p>
+<p><strong>Live block explorer:</strong> <a href="https://explorer.paraplx.com/">explorer.paraplx.com</a></p>
+<p><strong>Source code:</strong> <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner">GitHub repository</a></p>
+<p><strong>Official releases:</strong> <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/releases">Parallax Core releases</a></p>
+<p><strong>Security policy:</strong> <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/blob/main/SECURITY.md">Security documentation</a></p>
+<p><strong>Tokenomics:</strong> <a href="https://github.com/ParallaxCoreDevelopers/parallax_wallet_miner/blob/main/tokenomics">Published tokenomics</a></p>
+<p><strong>Network update:</strong> <a href="/network-update.html">Mining and network update</a></p>
+</div>
+
+<h2>11. Disclaimer</h2>
+<p>This whitepaper is informational and describes the project according to the public documentation available at the time of publication. It is not investment, financial, legal or tax advice, and it is not an offer to sell or a solicitation to buy any asset. Cryptocurrency networks involve technical, operational, market and regulatory risks. No future exchange listing, market value, liquidity, return or software feature is guaranteed.</p>
+<p>Network parameters, software releases and development plans may change through publicly documented updates. For current chain state, use the live explorer; for current software, use the official release repository and verify its checksum.</p>
+<p class="muted"><strong>Document:</strong> Parallax (PLX) Whitepaper · <strong>Publisher:</strong> Parallax Core Developers · <strong>Project:</strong> Independent Layer 1 Scrypt Proof-of-Work blockchain.</p>
+</main>
+<footer>
+<p>© 2026 Parallax Core Developers. Parallax (PLX) is an independent open-source Layer 1 blockchain.</p>
+<p><a href="/">Home</a> · <a href="/faq.html">FAQ</a> · <a href="https://explorer.paraplx.com/">Block Explorer</a></p>
+</footer>
+</div>
+</body>
+</html>
