@@ -51,7 +51,7 @@ Available security and wallet-management features include:
 - Node information
 - RPC and console functionality
 
-Wallet encryption helps protect locally stored wallet information from unauthorized access.
+Wallet encryption helps protect locally stored wallet information from unauthorised access.
 
 Encryption does not replace good computer security.
 
@@ -79,7 +79,7 @@ A wallet passphrase should be stored securely because loss of the passphrase may
 
 Parallax Core validates blockchain data locally as a full network node.
 
-A fully synchronized Parallax Core client independently processes and validates the Parallax blockchain rather than relying solely on a third-party wallet service.
+A fully synchronised Parallax Core client independently processes and validates the Parallax blockchain rather than relying solely on a third-party wallet service.
 
 This provides users with direct participation in the Parallax peer-to-peer network.
 
@@ -118,7 +118,7 @@ The official public source tree is intended to contain software source and publi
 
 The official Parallax block explorer is:
 
-https://explorer.parallaxcoin.xyz/
+https://explorer.paraplx.com/
 
 The explorer provides public read-only blockchain information.
 
@@ -166,7 +166,7 @@ Parallax users should:
 1. Download software only from official project sources.
 2. Verify the published SHA256 checksum.
 3. Encrypt wallets containing valuable PLX.
-4. Use a strong unique wallet passphrase.
+4. Use a strong, unique wallet passphrase.
 5. Maintain secure wallet backups.
 6. Never share private keys.
 7. Never publish RPC credentials.
@@ -174,17 +174,17 @@ Parallax users should:
 9. Keep the operating system updated and protected.
 10. Verify recipient addresses before sending PLX.
 11. Keep important backups on separate secure storage.
-12. Confirm that the wallet is synchronized with the correct Parallax Mainnet before transacting or mining.
+12. Confirm that the wallet is synchronised with the correct Parallax Mainnet before transacting or mining.
 
 ## Official Resources
 
 Official website:
 
-https://parallaxcoin.xyz/
+https://paraplx.com
 
 Official block explorer:
 
-https://explorer.parallaxcoin.xyz/
+https://explorer.paraplx.com
 
 Official GitHub:
 
